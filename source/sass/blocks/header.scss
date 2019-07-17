@@ -6,16 +6,16 @@
 .header__logo {
   height: 83px;
   display: flex;
-  background-image: url(../img/logo-sedona-mobile.svg);
+  background-image: url("../../img/logo-sedona-mobile.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   margin: 0 auto;
   position: relative;
   z-index: 2;
-};
+}
 
 .header__text {
-  background: url('../img/bg-back-mobile@1x.jpg') no-repeat;
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat;
   height: 389px;
   background-position: center;
   margin-top: -27px;
@@ -31,7 +31,7 @@
 
 /*photo.html*/
 .header__bg {
-  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   position: relative;
   top: -27px;
@@ -42,7 +42,7 @@
 .header__sedona {
   display: block;
   width: 229px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 20px;
   padding-top: 52px;
 }
@@ -53,4 +53,4 @@
   left: -3px;
   right: 0;
   width: 325px;
-};
+}

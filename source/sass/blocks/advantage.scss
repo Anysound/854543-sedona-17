@@ -1,9 +1,10 @@
 .advantage {
   display: flex;
-  padding: 0 41px 0px 25px;
+  padding: 0 41px 0 25px;
+
   &:nth-child(2) {
     padding-bottom: 5px;
-    }
+  }
 }
 
 .advantage__text {
@@ -12,10 +13,11 @@
     padding: 0;
     margin-top: 20px;
     margin-bottom: 13px;
-    }
+  }
+
   .promo__review {
     margin-top: 10px;
-    }
+  }
 }
 
 .advantage__img-house {
@@ -48,4 +50,4 @@
   .promo__title {
     margin-top: 15px;
   }
-};
+}
