@@ -1,45 +1,52 @@
 .advantage {
-    display: flex;
-    padding: 0 41px 0px 25px;
-    &:nth-child(2) {
-        padding-bottom: 5px;
+  display: flex;
+  padding: 0 41px 0px 25px;
+  &:nth-child(2) {
+    padding-bottom: 5px;
     }
 }
+
 .advantage__text {
-    .promo__title {
-        text-align: left;
-        padding: 0;
-        margin-top: 20px;
-        margin-bottom: 13px;
-    }
-    .promo__review {
-        margin-top: 10px;
-    }
-}
-.advantage__img-house {
-    width: 39px;
-    align-self: flex-start;
-    margin-top: 10px;
-    margin-right: 13px;
-}
-.advantage__img-gift {
-    width: 32px;
-    align-self: flex-start;
-    margin-top: 10px;
-    margin-left: 4px;
-    margin-right: 16px;
-}
-.advantage__img-eat {
-    width: 40px;
-    align-self: flex-start;
-    margin-top: 10px;
-    margin-right: 12px;
-}
-.advantage__preview {
+  .promo__title {
     text-align: left;
-}
-.advantage__text--eat {
-    .promo__title {
-        margin-top: 15px;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 13px;
     }
+  .promo__review {
+    margin-top: 10px;
+    }
+}
+
+.advantage__img-house {
+  width: 39px;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-right: 13px;
+}
+
+.advantage__img-gift {
+  width: 32px;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 16px;
+}
+
+.advantage__img-eat {
+  width: 40px;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-right: 12px;
+}
+
+.advantage__preview {
+  text-align: left;
+}
+
+.advantage__text--eat {
+  .promo__title {
+    margin-top: 15px;
+  }
 };
+
