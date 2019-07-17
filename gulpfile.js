@@ -27,6 +27,7 @@ gulp.task("server", function () {
     notify: false,
     open: true,
     cors: true,
+    browser: 'chrome',
     ui: false
   });
 
