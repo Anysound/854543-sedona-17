@@ -2,7 +2,6 @@
     width: 320px;
     margin: 0 auto;
 }
-
 .promo__title {
     color: #000000;
     font-family: "pt-sansBold", sans-serif;
@@ -26,7 +25,6 @@
     text-transform: uppercase;
     text-align: center;
     margin-top: 30px;
-    
 }
 .promo__review--description {
     line-height: 2;
@@ -84,12 +82,10 @@
 }
 .promo-item__img {
     position: relative;
-    
     height: 260px;
     width: 100%;
     top: -20px;
 }
-
 .promo-item__img--bridge {
     background-image: url(../img/photo-bridge-mobile@1x.jpg);
     background-repeat: no-repeat;
@@ -97,7 +93,6 @@
 }
 .promo-item__number--gray {
     color: #333333;
-    
     &:before, &:after {
         background: #333333;
     }
@@ -119,7 +114,6 @@
     .promo__title {
         margin-top: 0;
         padding-top: 30px;
-        
     }
     .promo__review {
         padding: 0 20px;
@@ -134,7 +128,7 @@
 }
 .promo-item--small {
     padding-top: 0px;
-} 
+}
 .promo__title--small {
     font-size: 14px;
     text-align: left;
