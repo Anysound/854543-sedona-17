@@ -156,3 +156,19 @@
   padding: 0;
   margin-top: 20px;
 }
+
+.promo-item__triangle {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17px 160px 0 160px;
+  border-color: white transparent transparent transparent;
+}
+
+.promo__title--triangle {
+  padding-top: 50px;
+}

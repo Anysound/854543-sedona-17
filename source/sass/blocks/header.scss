@@ -46,10 +46,26 @@
   padding: 52px 20px 20px;
 }
 
-.header__triangle {
+.header__triangle-left {
   position: absolute;
-  bottom: -1px;
-  left: -3px;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 23px 0 0 160px;
+  border-color: transparent transparent transparent white;
+}
+
+.header__triangle-right {
+  position: absolute;
+  bottom: 0;
   right: 0;
-  width: 325px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 23px 160px;
+  border-color: transparent transparent white transparent;
 }
