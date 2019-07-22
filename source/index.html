@@ -22,7 +22,7 @@
       <a href="#" class="logo header__logo">
       </a>
       <div class="header__text">
-        <img src="img/text-sedona-index.svg" alt="" class="header__inner-text">
+        <img class="header__inner-text" src="img/text-sedona-index.svg" alt="">
         <div class="header__triangle-left"></div>
         <div class="header__triangle-right"></div>
       </div>
@@ -38,13 +38,15 @@
           каньон!</p>
       </article>
       <div class="promo-item">
-        <div class="promo-item__text">
-          <h2 class="promo__title promo__title--white promo__title--triangle">настоящий городок</h2>
-          <span class="promo-item__number">№1</span>
-          <p class="promo__review promo__review--white">седона не аттракцион для туристов, там течет своя жизнь</p>
-          <div class="promo-item__triangle"></div>
+        <div class="promo-item__wrapper">
+          <div class="promo-item__text">
+            <h2 class="promo__title promo__title--white promo__title--triangle">настоящий городок</h2>
+            <span class="promo-item__number">№1</span>
+            <p class="promo__review promo__review--white">седона не аттракцион для туристов, там <span>течет своя жизнь</span> </p>
+            <div class="promo-item__triangle"></div>
+          </div>
+          <div class="promo-item__img promo-item__img--city"></div>
         </div>
-        <img class="promo-item__img" src="img/main-city-mobile@1x.jpg" alt="">
         <div class="promo-item__advantages">
           <div class="advantage">
             <img src="img/icon-house.svg" class="advantage__img-house" alt="">
@@ -71,31 +73,33 @@
       </div>
       <div class="promo-item">
         <div class="promo-item__text">
-          <h2 class="promo__title promo__title--white">там есть мост дьявола</h2>
+          <h2 class="promo__title promo__title--white">там есть <span> мост дьявола</span></h2>
           <span class="promo-item__number">№2</span>
           <p class="promo__review promo__review--white">да, по нему можно пройти! если осмелитесь, конечно</p>
         </div>
         <div class="promo-item__img promo-item__img--bridge"></div>
       </div>
-      <div class="promo-item promo-item--small">
-        <div class="promo-item__text-gray">
-          <h2 class="promo__title">небольшая площадь</h2>
-          <span class="promo-item__number promo-item__number--gray">№3</span>
-          <p class="promo__review">все интересные места находятся очень близко</p>
+      <div class="promo-item__wrapper">
+        <div class="promo-item promo-item--small">
+          <div class="promo-item__text-gray">
+            <h2 class="promo__title">небольшая площадь</h2>
+            <span class="promo-item__number promo-item__number--gray">№3</span>
+            <p class="promo__review">все интересные места находятся очень близко</p>
+          </div>
         </div>
-      </div>
-      <div class="promo-item promo-item--small">
-        <div class="promo-item__text-gray">
-          <h2 class="promo__title">красивая дорога</h2>
-          <span class="promo-item__number promo-item__number--gray">№4</span>
-          <p class="promo__review">ехать в седону из лас-вегаса совсем не скучно!</p>
+        <div class="promo-item promo-item--small">
+          <div class="promo-item__text-gray">
+            <h2 class="promo__title">красивая дорога</h2>
+            <span class="promo-item__number promo-item__number--gray">№4</span>
+            <p class="promo__review">ехать в седону из лас-вегаса совсем не скучно!</p>
+          </div>
         </div>
-      </div>
-      <div class="promo-item promo-item--small">
-        <div class="promo-item__text-gray">
-          <h2 class="promo__title">мало туристов</h2>
-          <span class="promo-item__number promo-item__number--gray">№5</span>
-          <p class="promo__review promo__review--no-border">большинство едет в гранд каньон и толпится там</p>
+        <div class="promo-item promo-item--small">
+          <div class="promo-item__text-gray">
+            <h2 class="promo__title">мало туристов</h2>
+            <span class="promo-item__number promo-item__number--gray">№5</span>
+            <p class="promo__review promo__review--no-border">большинство едет в гранд каньон и толпится там</p>
+          </div>
         </div>
       </div>
     </div>
@@ -116,4 +120,5 @@
     </div>
   </footer>
 </body>
+
 </html>
