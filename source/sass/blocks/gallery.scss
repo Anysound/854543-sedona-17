@@ -1,0 +1,74 @@
+.gallery {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.gallery__review {
+  padding: 0 20px;
+  line-height: 1.8;
+
+  span {
+    white-space: nowrap;
+  }
+}
+
+.gallery__text {
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 10px;
+}
+
+.gallery-items__item {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 20px 20px;
+  border-bottom: 1px solid #e6e6e6;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.gallery-items__author {
+  color: #333333;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.gallery-items__img {
+  height: 280px;
+  width: 280px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.gallery-items__img--sunset {
+  background-image: url("../../img/photo-sunset-mobile@1x.jpg");
+}
+
+.gallery-items__img--cactus {
+  background-image: url("../../img/photo-cactus-mobile@1x.jpg");
+}
+
+.gallery-items__img--roads {
+  background-image: url("../../img/photo-roads-mobile@1x.jpg");
+}
+
+.gallery-items__img--bridge {
+  background-image: url("../../img/photo-bridge-mobile@1x.jpg");
+}
+
+.gallery-items__likes {
+  img {
+    opacity: 0.3;
+    margin-right: 14px;
+  }
+
+  span {
+    font-family: "pt-sansBold", sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+  }
+}

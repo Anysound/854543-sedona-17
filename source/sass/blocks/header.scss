@@ -1,0 +1,71 @@
+.header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  height: 83px;
+  display: flex;
+  background-image: url("../../img/logo-sedona-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.header__text {
+  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat;
+  height: 389px;
+  background-position: center;
+  margin-top: -27px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header__inner-text {
+  margin-top: 10px;
+  width: 280px;
+}
+
+/*photo.html*/
+.header__bg {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -27px;
+  background-position: 45% 100%;
+  height: 160px;
+}
+
+.header__sedona {
+  display: block;
+  width: 229px;
+  margin: 0 auto;
+  padding: 52px 20px 20px;
+}
+
+.header__triangle-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 23px 0 0 160px;
+  border-color: transparent transparent transparent white;
+}
+
+.header__triangle-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 23px 160px;
+  border-color: transparent transparent white transparent;
+}

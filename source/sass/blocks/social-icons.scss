@@ -1,0 +1,13 @@
+.social-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  background: #81b3d2;
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
