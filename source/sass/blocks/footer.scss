@@ -41,3 +41,33 @@
   margin-top: 10px;
   margin-left: 6px;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    width: $tablet-width;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  .footer__info {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: $desktop-width;
+  }
+
+  .footer__wrapper {
+    width: auto;
+    padding: 0 120px;
+  }
+}

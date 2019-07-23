@@ -55,7 +55,7 @@
   height: 0;
   border-style: solid;
   border-width: 23px 0 0 160px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent #ffffff;
 }
 
 .header__triangle-right {
@@ -67,5 +67,52 @@
   height: 0;
   border-style: solid;
   border-width: 0 0 23px 160px;
-  border-color: transparent transparent white transparent;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    width: $tablet-width;
+    box-shadow: 0 0 1px #808080;
+  }
+
+  .header__logo {
+    position: relative;
+    width: 102px;
+    top: -58px;
+  }
+
+  .header__text {
+    position: relative;
+    top: -55px;
+    width: auto;
+    height: 518px;
+    background: url("../../img/bg-back-tablet@1x.jpg");
+  }
+
+  .header__inner-text {
+    width: 460px;
+    margin-top: 75px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: $desktop-width;
+  }
+
+  .header__bg,
+  .header__text {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    height: 518px;
+  }
+
+  .header__text {
+    top: -28px;
+  }
+
+  .header__sedona {
+    width: 461px;
+    padding-top: 120px;
+  }
 }

@@ -12,7 +12,7 @@
 
   a {
     display: block;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     line-height: 55px;
     font-family: "pt-sansBold", sans-serif;
@@ -23,4 +23,66 @@
 .nav__list {
   padding-left: 0;
   margin: 0;
+}
+
+@media (min-width: $table-width) {
+  .nav__list {
+    display: flex;
+    margin: 0 auto;
+    width: 716px;
+  }
+
+  .nav__item {
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    color: #000000;
+
+    a {
+      color: #000000;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    &:first-child {
+      margin-right: 77px;
+      padding-left: 23px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 209px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 49px;
+    }
+
+    &:last-child {
+      box-shadow: none;
+    }
+  }
+
+  .nav__btn-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__list {
+    width: 1040px;
+  }
+
+  .nav__item {
+    &:first-child {
+      margin-right: 218px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 282px;
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
+  }
 }

@@ -47,7 +47,7 @@
 
 .promo__title--white {
   padding-top: 40px;
-  color: white;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
@@ -56,7 +56,7 @@
   line-height: 21px;
   display: block;
   text-align: center;
-  color: white;
+  color: #ffffff;
   position: relative;
 
   &::before {
@@ -83,7 +83,7 @@
 }
 
 .promo__review--white {
-  color: white;
+  color: #ffffff;
   margin-top: 20px;
   padding: 0 20px 40px;
 }
@@ -96,7 +96,7 @@
 }
 
 .promo-item__img--city {
-  background-image: url("../img/main-city-mobile@1x.jpg");
+  background-image: url("../../img/main-city-mobile@1x.jpg");
 }
 
 .promo-item__img--bridge {
@@ -170,9 +170,154 @@
   height: 0;
   border-style: solid;
   border-width: 17px 160px 0 160px;
-  border-color: white transparent transparent transparent;
+  border-color: #ffffff transparent transparent transparent;
 }
 
 .promo__title--triangle {
   padding-top: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    position: relative;
+    top: 0;
+    width: $tablet-width;
+  }
+
+  .promo__text {
+    padding: 0 50px 30px;
+  }
+
+  .promo__title {
+    font-size: 21px;
+    line-height: 26px;
+    padding: 0;
+  }
+
+  .promo-item__number {
+    &::before {
+      left: 102px;
+    }
+
+    &::after {
+      right: 102px;
+    }
+  }
+
+  .promo__title--white {
+    padding: 0 50px;
+  }
+
+  .promo-item__wrapper {
+    display: flex;
+
+    &:first-child {
+      height: 260px;
+    }
+
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+
+  .promo-item:nth-child(2) {
+    top: 0;
+  }
+
+  .promo-item--small {
+    height: 256px;
+  }
+
+  .promo-item__img {
+    top: 0;
+    width: 512px;
+    height: 256px;
+  }
+
+  .promo__review--white {
+    padding: 0 40px 40px;
+    line-height: 1.5;
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  .promo-item__text {
+    width: 256px;
+    height: 256px;
+  }
+
+  .promo-item__text-gray:first-child {
+    margin-top: 0;
+  }
+
+  .promo-item__text-gray {
+    height: 100%;
+
+    .promo__title {
+      padding: 45px 40px 0;
+    }
+
+    .promo__review {
+      line-height: 1.5;
+      margin-top: 25px;
+      border-bottom: 0;
+    }
+  }
+
+  .promo-item__number--gray {
+    &::before {
+      left: 80px;
+    }
+
+    &::after {
+      right: 80px;
+      height: 1px;
+    }
+  }
+
+  .promo-item__img--city {
+    background-image: url("../../img/main-city-tablet@1x.jpg");
+  }
+
+  .promo-item__img--bridge {
+    background-image: url("../../img/main-bridge-tablet@1x.jpg");
+  }
+
+  .promo-item__triangle {
+    display: none;
+  }
+
+  .promo-item__advantages {
+    display: flex;
+  }
+
+  .promo-item:nth-child(3) {
+    display: flex;
+
+    .promo-item__text {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: $desktop-width;
+  }
+
+  .promo-item__img--city {
+    background-image: url("../../img/main-city-desktop@1x.jpg");
+    width: 800px;
+  }
+
+  .promo-item__text {
+    width: 400px;
+  }
+
+  .promo-item__img--bridge {
+    background-image: url("../../img/main-bridge-desktop@1x.jpg");
+    width: 800px;
+  }
 }
