@@ -90,6 +90,12 @@
     padding-bottom: 40px;
     line-height: 1.5;
   }
+
+  .advantage__text--eat {
+    .promo__review {
+      padding-top: 16px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

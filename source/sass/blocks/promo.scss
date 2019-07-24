@@ -28,8 +28,6 @@
   margin-top: 30px;
 }
 
-
-
 .promo__review--description {
   line-height: 2;
 }
@@ -192,6 +190,10 @@
 
   .promo__text {
     padding: 0 50px 30px;
+
+    .promo__title {
+      margin-top: -5px;
+    }
   }
 
   .promo__title {
@@ -328,10 +330,11 @@
   }
 
   .promo-item__number {
-    &:before {
+    &::before {
       left: 175px;
     }
-    &:after {
+
+    &::after {
       right: 175px;
     }
   }
@@ -349,10 +352,11 @@
   }
 
   .promo-item__number--gray {
-    &:before {
+    &::before {
       left: 153px;
     }
-    &:after {
+
+    &::after {
       right: 153px;
     }
   }
