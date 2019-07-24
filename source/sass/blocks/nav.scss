@@ -69,20 +69,24 @@
 
 @media (min-width: $desktop-width) {
   .nav__list {
-    width: 1040px;
+    width: 100%;
   }
 
   .nav__item {
     &:first-child {
-      margin-right: 218px;
+      margin: 0 152px 0 81px;
+      padding: 0;
     }
 
     &:nth-child(2) {
-      margin-right: 282px;
+      margin-right: 372px;
     }
 
     &:last-child {
-      margin-left: auto;
+      margin-left: 78px;
+    }
+    a {
+      padding: 0 10px;
     }
   }
 }

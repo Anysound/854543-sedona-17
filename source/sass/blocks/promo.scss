@@ -360,4 +360,15 @@
   .promo-item--small {
     width: 400px;
   }
+
+  .promo__text {
+    .promo__title {
+      margin-top: -20px;
+      padding: 0 20%;
+    }
+  }
+
+  .promo__title--white {
+    padding: 14px 110px 0;
+  }
 }

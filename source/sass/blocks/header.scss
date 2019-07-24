@@ -107,11 +107,73 @@
   }
 
   .header__text {
-    top: -28px;
+    top: -73px;
   }
 
   .header__sedona {
     width: 461px;
     padding-top: 120px;
   }
+
+  .header__logo {
+    top: -58px;
+    width: 188px;
+    height: 100px;
+    background-image: url("../../img/logo-sedona-desktop.svg")
+  }
+
+  .header__inner-text {
+    margin-top: -12px;
+  }
+
+  .header__triangle-left {
+  position: absolute;
+  bottom: 0;
+  left: 250px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 58px 0 0 350px;
+  border-color: transparent transparent transparent #ffffff;
+  &:before {
+    content: "";
+    position: absolute;
+    left: -611px;
+    bottom: -43px;
+    height: 88px;
+    transform: rotate(6deg);
+    width: 283px;
+    background-color: #ffffff;
+    
+  }
+}
+
+.header__triangle-right {
+  position: absolute;
+  bottom: 0;
+  right: 250px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 58px 350px;
+  border-color: transparent transparent #ffffff transparent;
+  &:after {
+    content: "";
+    position: absolute;
+    right: -261px;
+    top: 12px;
+    height: 88px;
+    transform: rotate(-6deg);
+    width: 283px;
+    background-color: #ffffff;
+  }
+}
+
+.header__bg {
+  top: -100px;
+}
+
+
 }

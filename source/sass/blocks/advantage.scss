@@ -93,5 +93,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  
+  .advantage {
+    margin-top: 47px;
+  }
+
+  .advantage__img-gift {
+    padding: 5px 0 0 0;
+  }
+
+  .advantage__text--eat {
+    .promo__review {
+      padding-top: 17px;
+    }
+  }
 }

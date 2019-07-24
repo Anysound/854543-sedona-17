@@ -206,7 +206,23 @@
     }
   }
 
-  .gallery-items__icon path {
-    fill: white !important;
+  .gallery-items__icon {
+    path {
+      fill: white;
+    }
+    
+    margin-right: 8px;
+
+  }
+
+  .gallery__text {
+    .promo__title {
+      margin: 20px 0 10px;
+    }
+  }
+
+  .gallery__review {
+    padding: 10px 32%;
+    margin-bottom: 50px;
   }
 }
