@@ -93,10 +93,15 @@
 
   .gallery__text {
     border-bottom: none;
+    padding-bottom: 23px;
 
     .promo__title {
-      margin-top: -10px;
+      margin-top: -15px;
       font-size: 30px;
+    }
+
+    .promo__review {
+      margin-top: 0px;
     }
   }
 
@@ -155,7 +160,7 @@
       align-items: center;
 
       span {
-        margin: 10px 21px 0 0;
+        margin: 6px 21px 0 0;
       }
 
       img {
@@ -182,6 +187,14 @@
   }
 }
 
+.gallery-items__likes {
+  display: flex;
+  align-items: center;
+
+  .gallery-items--veget {
+    margin: 6px 67px 0 0;
+  }
+}  
 @media (min-width: $desktop-width) {
   .gallery {
     width: $desktop-width;

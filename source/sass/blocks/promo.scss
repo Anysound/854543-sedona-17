@@ -216,7 +216,7 @@
   }
 
   .promo__text {
-    padding: 0 50px 48px;
+    padding: 0 50px 49px;
 
     .promo__title {
       margin-top: -5px;
@@ -241,6 +241,7 @@
 
   .promo__title--white {
     padding: 0 50px;
+    margin-top: 45px;
   }
 
   .promo-item__wrapper {
@@ -267,7 +268,7 @@
 
   .promo__review--white {
     padding: 0 40px 40px;
-    line-height: 1.5;
+    margin-top: 21px;
 
     span {
       white-space: nowrap;
@@ -279,8 +280,10 @@
     height: 256px;
   }
 
-  .promo-item__text-gray:first-child {
-    margin-top: 0;
+  .promo-item__text-gray {
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   .promo-item__text-gray {
@@ -291,11 +294,16 @@
     }
 
     .promo__review {
-      line-height: 1.5;
-      margin-top: 25px;
+      margin-top: 22px;
       border-bottom: 0;
     }
+
+    .promo__review--lv {
+      padding: 0 40px;
+    }
   }
+
+  
 
   .promo-item__number--gray {
     &::before {
@@ -325,6 +333,7 @@
   }
 
   .promo-item:nth-child(3) {
+    top: 0;
     display: flex;
 
     .promo-item__text {

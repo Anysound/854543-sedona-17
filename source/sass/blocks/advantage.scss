@@ -64,7 +64,26 @@
 @media (min-width: $tablet-width) {
   .advantage {
     flex-direction: column;
-    margin-top: 47px;
+    margin-top: 57px;
+    
+    &:first-child {
+      position: relative;
+      left: -10px;
+      padding: 0 53px 0 5px;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      left: -20px;
+      padding: 0 2px 0 0;
+    }
+
+    &:last-child {
+      position: relative;
+      left: -56px;
+      padding: 0;
+    }
+    
   }
 
   .advantage__img-house,
@@ -78,31 +97,58 @@
   }
 
   .advantage__img-gift {
-    margin-top: 6px;
-    width: 77px;
-    height: 68px;
+    margin-top: 0;
+    width: 64px;
+    height: 75px;
     padding-bottom: 0;
   }
 
   .advantage__img-eat {
     width: 77px;
     padding-top: 5px;
+    margin-bottom: 2px;
   }
 
-  .advantage__text .promo__title {
+  .advantage__text {
+    padding-bottom: 7px;
+    
+    .promo__title {
     text-align: center;
-    margin-top: 27px;
+    margin-top: 28px;
+    }
+  }  
+
+  .advantage__text--eat .promo__title {
+    margin-top: 25px;
+    margin-bottom: 12px;
   }
 
   .advantage__preview {
     text-align: center;
     padding: 5px 14px 40px;
     line-height: 1.5;
+
+    .advantage__nowrap {
+      white-space: nowrap;
+    }
   }
 
   .advantage__text--eat {
     .promo__review {
       padding-top: 8px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .advantage__text--gift {
+    .promo__title {
+      margin-top: 26px;
+    }
+  }
+
+  .advantage__text--house {
+    .promo__review {
+      padding: 5px 49px 40px;
     }
   }
 }
