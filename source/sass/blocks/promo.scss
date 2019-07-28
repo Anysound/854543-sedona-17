@@ -347,6 +347,10 @@
     width: $desktop-width;
   }
 
+  .promo__text {
+    padding: 0 50px 46px;
+  }
+
   .promo-item__img--city {
     background-image: url("../../img/main-city-desktop@1x.jpg");
     width: 800px;
@@ -406,5 +410,14 @@
 
   .promo__title--white {
     padding: 14px 110px 0;
+    margin-top: 38px;
+  }
+
+  .promo__review--white {
+    padding: 0 55px 40px;
+  }
+
+  .promo-item__advantages {
+    padding-top: 12px;
   }
 }
