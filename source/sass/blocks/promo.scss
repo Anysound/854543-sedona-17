@@ -64,7 +64,6 @@
   font-size: 14px;
   text-align: center;
   color: #ffffff;
-  
 
   &::before {
     content: "";
@@ -198,7 +197,6 @@
 }
 
 .promo__text {
-
   .promo__title {
     margin: 38px 0 0;
   }
@@ -281,13 +279,11 @@
   }
 
   .promo-item__text-gray {
+    height: 100%;
+
     &:first-child {
       margin-top: 0;
     }
-  }
-
-  .promo-item__text-gray {
-    height: 100%;
 
     .promo__title {
       padding: 45px 31px 0 40px;
@@ -302,8 +298,6 @@
       padding: 0 40px;
     }
   }
-
-  
 
   .promo-item__number--gray {
     &::before {
@@ -345,10 +339,6 @@
 @media (min-width: $desktop-width) {
   .promo {
     width: $desktop-width;
-  }
-
-  .promo__text {
-    padding: 0 50px 46px;
   }
 
   .promo-item__img--city {
@@ -402,6 +392,8 @@
   }
 
   .promo__text {
+    padding: 0 50px 46px;
+
     .promo__title {
       margin-top: -20px;
       padding: 0 20%;

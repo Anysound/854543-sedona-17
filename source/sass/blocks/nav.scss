@@ -23,11 +23,9 @@
 
 .nav {
   position: relative;
-  
 }
 
 .nav__list {
-  
   padding-left: 0;
   margin: 0;
 }
@@ -48,12 +46,12 @@
   position: absolute;
   transition: all 0.3s;
   content: "";
-  top: 15px;
-  right: 15px;
-  width: 36px;
-  height: 2px;
+  top: 14px;
+  right: 19px;
+  width: 23px;
+  height: 4px;
   background-color: #81b3d2;
-  box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+  box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
 }
 
 .nav--opened {
@@ -66,7 +64,7 @@
 }
 
 .nav--opened .nav__btn-toggle {
-  top: 227px;
+  top: 27px;
   left: auto;
   right: 0;
 
@@ -75,13 +73,13 @@
     content: "";
     transition: all 0.3s;
     position: absolute;
-    top: 22px;
-    right: 12px;
+    top: 2px;
+    right: 16px;
 
-    width: 36px;
-    height: 2px;
+    width: 28px;
+    height: 5px;
 
-    background-color: #81b3d2;
+    background-color: #ffffff;
   }
 
   &::before {
@@ -110,8 +108,8 @@
     display: none;
 
     &--active {
-    //transform: translateY(0px);
-    display: block;
+      //transform: translateY(0px);
+      display: block;
     }
   }
 }
