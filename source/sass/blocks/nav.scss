@@ -1,4 +1,5 @@
 .nav__item {
+  transition: all 0.3s;
   height: 55px;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
@@ -22,9 +23,11 @@
 
 .nav {
   position: relative;
+  
 }
 
 .nav__list {
+  
   padding-left: 0;
   margin: 0;
 }
@@ -43,6 +46,7 @@
 
 .nav--closed .nav__btn-toggle::before {
   position: absolute;
+  transition: all 0.3s;
   content: "";
   top: 15px;
   right: 15px;
@@ -50,6 +54,10 @@
   height: 2px;
   background-color: #81b3d2;
   box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+}
+
+.nav--opened {
+  transition: all 0.3s;
 }
 
 .nav--closed .nav__btn-toggle:active::before {
@@ -65,7 +73,7 @@
   &::before,
   &::after {
     content: "";
-
+    transition: all 0.3s;
     position: absolute;
     top: 22px;
     right: 12px;
@@ -102,6 +110,7 @@
     display: none;
 
     &--active {
+    //transform: translateY(0px);
     display: block;
     }
   }
@@ -157,16 +166,16 @@
 
   .nav__item {
     &:first-child {
-      margin: 0 152px 0 81px;
+      margin: 0 142px 0 81px;
       padding: 0;
     }
 
     &:nth-child(2) {
-      margin-right: 372px;
+      margin-right: 362px;
     }
 
     &:last-child {
-      margin-left: 78px;
+      margin-left: 68px;
     }
 
     a {

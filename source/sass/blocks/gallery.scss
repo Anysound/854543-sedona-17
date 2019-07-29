@@ -33,6 +33,10 @@
   flex-direction: column;
   padding: 22px 20px 19px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  
+  &:nth-child(2) {
+    padding: 26px 20px 19px;
+  }
 }
 
 .gallery-items__author {
@@ -72,13 +76,26 @@
     margin-right: 14px;
   }
 
-  span {
+  .gallery-items__item--places {
     font-family: "pt-sansBold", sans-serif;
     font-size: 13px;
     display: inline-block;
     position: relative;
-    top: 0;
+    top: 4px;
+    left: 5px;
   }
+}
+
+.gallery-items__text--veget {
+  .promo__title--small {
+    margin: 19px 0 2px;
+  }
+}
+
+.gallery-items__text--roads {
+ .promo__title--small {
+   margin: 18px 0 2px;
+ }
 }
 
 @media (min-width: $tablet-width) {
@@ -216,11 +233,20 @@
     padding: 0;
 
     &:nth-child(2) {
+      position: relative;
+      top: -80px;
       width: 400px;
       padding: 0;
     }
 
+    &:nth-child(3) {
+      position: relative;
+      top: -80px;
+    }
+
     &:last-child {
+      position: relative;
+      top: -80px;
       padding: 0;
     }
 
@@ -257,8 +283,14 @@
   }
 
   .gallery__text {
+    padding-bottom: 10px;
+
     .promo__title {
       margin: 20px 0 10px;
+    }
+
+    .promo__review {
+      margin-top: 20px;
     }
   }
 

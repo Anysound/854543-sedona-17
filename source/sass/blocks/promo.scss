@@ -290,7 +290,7 @@
     height: 100%;
 
     .promo__title {
-      padding: 45px 40px 0;
+      padding: 45px 31px 0 40px;
     }
 
     .promo__review {
@@ -418,6 +418,16 @@
   }
 
   .promo-item__advantages {
-    padding-top: 12px;
+    padding: 12px 0 20px;
+  }
+
+  .promo-item__text--bridge {
+    .promo__review {
+      padding: 0 85px 40px;
+    }
+  }
+
+  .promo-item__text-gray .promo__title {
+    padding: 45px 110px 0;
   }
 }

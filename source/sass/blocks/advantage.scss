@@ -48,7 +48,11 @@
   width: 40px;
   align-self: flex-start;
   margin-top: 7px;
-  margin-right: 12px;
+  margin-left: -10px;
+}
+
+.advantage__text--eat {
+  margin-left: 13px;
 }
 
 .advantage__preview {
@@ -167,4 +171,43 @@
       padding-top: 17px;
     }
   }
+
+  .advantage__img-house {
+    margin-left: 165px;
+  }
+
+  .advantage__img-eat {
+    margin-left: 120px;
+  }
+
+  .advantage__img-gift {
+    margin-left: 130px;
+    margin-top: -10px;
+  }
+
+  .advantage__text--house {
+    .promo__title {
+      margin-left: -20px;
+    }
+  }
+
+  .advantage__text--eat {
+    .promo__title {
+      margin-left: -35px;
+    }
+
+    .promo__review {
+      padding-top: 8px;
+      margin-left: -40px;
+    }
+  }
+
+  .advantage__text--gift {
+    .promo__title {
+      margin-top: 30px;
+
+    }
+  }
+
+  
 }
