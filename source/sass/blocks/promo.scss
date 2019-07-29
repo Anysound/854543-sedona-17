@@ -4,16 +4,15 @@
 }
 
 .promo__title {
-  color: #000000;
+  margin-top: 40px;
+  padding: 0 40px;
   font-family: "pt-sansBold", sans-serif;
   font-size: 18px;
   font-weight: 700;
+  color: #000000;
   line-height: 26px;
-  letter-spacing: -0.5px;
   text-transform: uppercase;
   text-align: center;
-  padding: 0 40px;
-  margin-top: 40px;
 
   span {
     white-space: nowrap;
@@ -21,11 +20,11 @@
 }
 
 .promo__review {
+  margin-top: 30px;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 30px;
   line-height: 1.5;
 }
 
@@ -41,15 +40,15 @@
 }
 
 .promo-item__text {
-  background-color: #81b3d2;
   position: relative;
   text-align: center;
+  background-color: #81b3d2;
 }
 
 .promo__title--white {
+  margin-bottom: 10px;
   padding-top: 40px;
   color: #ffffff;
-  margin-bottom: 10px;
 }
 
 .promo__title--bridge {
@@ -59,56 +58,56 @@
 .promo-item__number {
   position: relative;
   display: block;
+  font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  font-size: 14px;
   text-align: center;
   color: #ffffff;
 
   &::before {
-    content: "";
-    display: block;
-    background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
-    width: 8px;
-    height: 1px;
+    content: "";
     left: 133px;
     top: 10px;
+    display: block;
+    width: 8px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.6);
   }
 
   &::after {
-    content: "";
-    display: block;
-    background-color: rgba(255, 255, 255, 0.6);
     position: absolute;
-    width: 8px;
-    height: 1.1px;
+    content: "";
     right: 133px;
     top: 10px;
+    display: block;
+    width: 8px;
+    height: 1.1px;
+    background-color: rgba(255, 255, 255, 0.6);
   }
 }
 
 .promo__review--white {
-  color: #ffffff;
   margin-top: 16px;
   padding: 0 20px 44px;
+  color: #ffffff;
 }
 
 .promo-item__img {
   position: relative;
-  height: 260px;
-  width: 100%;
   top: -20px;
+  width: 100%;
+  height: 260px;
 }
 
 .promo-item__img--city {
-  background-image: url("../../img/main-city-mobile@1x.jpg");
+  background-image: url("../img/main-city-mobile@1x.jpg");
 }
 
 .promo-item__img--bridge {
-  background-image: url("../../img/photo-bridge-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-image: url("../img/photo-bridge-mobile@1x.jpg");
 }
 
 .promo-item__number--gray {
@@ -129,10 +128,10 @@
 }
 
 .promo-item__text-gray {
-  background: #eeeeee;
   position: relative;
   margin-top: 0;
   padding: 0 20px;
+  background: #eeeeee;
 
   &:first-child {
     margin-top: -20px;
@@ -144,14 +143,14 @@
   }
 
   .promo__review {
+    margin: 15px 0 19px;
     padding: 0 20px 27px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 15px 0 19px;
   }
 
   .promo__review--no-border {
-    border-bottom: none;
     margin-bottom: 0;
+    border-bottom: none;
   }
 
   .promo-item__places {
@@ -173,10 +172,10 @@
 }
 
 .promo__title--small {
+  margin: 14px 0 2px;
+  padding: 0;
   font-size: 14px;
   text-align: left;
-  padding: 0;
-  margin: 14px 0 2px;
 }
 
 .promo-item__triangle {
@@ -192,8 +191,8 @@
 }
 
 .promo__title--triangle {
-  padding-top: 55px;
   margin-top: 14px;
+  padding-top: 55px;
 }
 
 .promo__text {
@@ -222,9 +221,9 @@
   }
 
   .promo__title {
+    padding: 0;
     font-size: 21px;
     line-height: 26px;
-    padding: 0;
   }
 
   .promo-item__number {
@@ -238,8 +237,8 @@
   }
 
   .promo__title--white {
-    padding: 0 50px;
     margin-top: 45px;
+    padding: 0 50px;
   }
 
   .promo-item__wrapper {
@@ -265,8 +264,8 @@
   }
 
   .promo__review--white {
-    padding: 0 40px 40px;
     margin-top: 21px;
+    padding: 0 40px 40px;
 
     span {
       white-space: nowrap;
@@ -311,11 +310,11 @@
   }
 
   .promo-item__img--city {
-    background-image: url("../../img/main-city-tablet@1x.jpg");
+    background-image: url("../img/main-city-tablet@1x.jpg");
   }
 
   .promo-item__img--bridge {
-    background-image: url("../../img/main-bridge-tablet@1x.jpg");
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
   }
 
   .promo-item__triangle {
@@ -342,8 +341,8 @@
   }
 
   .promo-item__img--city {
-    background-image: url("../../img/main-city-desktop@1x.jpg");
     width: 800px;
+    background-image: url("../img/main-city-desktop@1x.jpg");
   }
 
   .promo-item__text {
@@ -351,8 +350,8 @@
   }
 
   .promo-item__img--bridge {
-    background-image: url("../../img/main-bridge-desktop@1x.jpg");
     width: 800px;
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
   }
 
   .promo-item__number {
@@ -401,8 +400,8 @@
   }
 
   .promo__title--white {
-    padding: 14px 110px 0;
     margin-top: 38px;
+    padding: 14px 110px 0;
   }
 
   .promo__review--white {

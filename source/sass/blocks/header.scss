@@ -4,40 +4,40 @@
 }
 
 .header__logo {
-  height: 83px;
-  width: 125px;
-  display: flex;
-  background-image: url("../../img/logo-sedona-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  margin: 0 auto;
   position: relative;
   z-index: 2;
+  display: flex;
+  width: 125px;
+  height: 83px;
+  margin: 0 auto;
+  background-image: url("../img/logo-sedona-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .header__text {
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat;
-  height: 389px;
-  background-position: center;
-  margin-top: -27px;
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
+  height: 389px;
+  margin-top: -27px;
+  background-position: center;
+  background-image: url("../img/bg-back-mobile@1x.jpg") no-repeat;
 }
 
 .header__inner-text {
-  margin-top: 10px;
   width: 280px;
+  margin-top: 10px;
 }
 
 /*photo.html*/
 .header__bg {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
   position: relative;
   top: -27px;
-  background-position: 45% 100%;
   height: 159px;
+  background-position: 45% 100%;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
 }
 
 .header__sedona {
@@ -78,9 +78,9 @@
 
   .header__bg {
     top: -85px;
-    padding-top: 90px;
     height: 200px;
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    padding-top: 90px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
   .header__sedona {
@@ -104,8 +104,8 @@
       position: absolute;
       left: -611px;
       bottom: -43px;
-      height: 88px;
       transform: rotate(6deg);
+      height: 88px;
       width: 283px;
       background-color: #ffffff;
     }
@@ -127,17 +127,17 @@
       position: absolute;
       right: -261px;
       top: 12px;
-      height: 88px;
       transform: rotate(-6deg);
       width: 283px;
+      height: 88px;
       background-color: #ffffff;
     }
   }
 
   .header__logo {
     position: relative;
-    width: 102px;
     top: -58px;
+    width: 102px;
   }
 
   .header__text {
@@ -145,7 +145,7 @@
     top: -55px;
     width: auto;
     height: 518px;
-    background: url("../../img/bg-back-tablet@1x.jpg");
+    background: url("../img/bg-back-tablet@1x.jpg");
   }
 
   .header__inner-text {
@@ -161,8 +161,8 @@
 
   .header__bg,
   .header__text {
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
     height: 518px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 
   .header__text {
@@ -178,7 +178,7 @@
     top: -58px;
     width: 188px;
     height: 100px;
-    background-image: url("../../img/logo-sedona-desktop.svg");
+    background-image: url("../img/logo-sedona-desktop.svg");
   }
 
   .header__inner-text {
@@ -201,9 +201,9 @@
       position: absolute;
       left: -611px;
       bottom: -48px;
-      height: 88px;
       transform: rotate(6deg);
       width: 283px;
+      height: 88px;
       background-color: #ffffff;
     }
   }
@@ -224,16 +224,16 @@
       position: absolute;
       right: -261px;
       top: 12px;
-      height: 88px;
       transform: rotate(-6deg);
       width: 283px;
+      height: 88px;
       background-color: #ffffff;
     }
   }
 
   .header__bg {
-    padding: 0;
-    height: 295px;
     top: -100px;
+    height: 295px;
+    padding: 0;
   }
 }

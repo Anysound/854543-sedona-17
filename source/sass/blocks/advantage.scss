@@ -9,10 +9,10 @@
 
 .advantage__text {
   .promo__title {
-    text-align: left;
-    padding: 0;
     margin-top: 20px;
     margin-bottom: 13px;
+    padding: 0;
+    text-align: left;
   }
 
   .promo__review {
@@ -34,10 +34,8 @@
 
 .advantage__img-gift {
   width: 32px;
+  margin: 2px 16px 0 4px;
   align-self: flex-start;
-  margin-top: 2px;
-  margin-left: 4px;
-  margin-right: 16px;
 }
 
 .advantage__img-eat {
@@ -93,46 +91,47 @@
   }
 
   .advantage__img-gift {
-    margin-top: 0;
     width: 64px;
     height: 75px;
+    margin-top: 0;
     padding-bottom: 0;
   }
 
   .advantage__img-eat {
     width: 77px;
-    padding-top: 5px;
     margin-bottom: 2px;
+    padding-top: 5px;
   }
 
   .advantage__text {
     padding-bottom: 7px;
 
     .promo__title {
-      text-align: center;
       margin-top: 28px;
-    }
-  }
-
-  .advantage__text--eat .promo__title {
-    margin-top: 25px;
-    margin-bottom: 12px;
-  }
-
-  .advantage__preview {
-    text-align: center;
-    padding: 5px 14px 40px;
-    line-height: 1.5;
-
-    .advantage__nowrap {
-      white-space: nowrap;
+      text-align: center;
     }
   }
 
   .advantage__text--eat {
+    margin-left: 0;
+
+    .promo__title {
+      margin: 25px 0 12px;
+    }
+
     .promo__review {
-      padding-top: 8px;
       margin-bottom: 16px;
+      padding-top: 8px;
+    }
+  }
+
+  .advantage__preview {
+    padding: 5px 14px 40px;
+    text-align: center;
+    line-height: 1.5;
+
+    .advantage__nowrap {
+      white-space: nowrap;
     }
   }
 
@@ -155,9 +154,9 @@
   }
 
   .advantage__img-gift {
-    padding: 5px 0 0 0;
     margin-left: 130px;
     margin-top: -10px;
+    padding: 5px 0 0 0;
   }
 
   .advantage__img-house {
@@ -179,19 +178,21 @@
   }
 
   .advantage__text--eat {
+    margin-left: 13px;
+
     .promo__title {
-      margin-left: -35px;
+      margin-left: -45px;
     }
 
     .promo__review {
-      padding-top: 8px;
       margin-left: -40px;
+      padding-top: 8px;
     }
   }
 
   .advantage__text--gift {
     .promo__title {
-      margin-top: 30px;
+      margin: 30px 0 14px -20px;
     }
   }
 }
