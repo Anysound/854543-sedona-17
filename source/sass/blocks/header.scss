@@ -22,7 +22,8 @@
   height: 389px;
   margin-top: -27px;
   background-position: center;
-  background-image: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
 }
 
 .header__inner-text {
@@ -125,9 +126,9 @@
     &::after {
       content: "";
       position: absolute;
-      right: -261px;
-      top: 12px;
-      transform: rotate(-6deg);
+      right: -61px;
+      top: 34px;
+      transform: rotate(-7deg);
       width: 283px;
       height: 88px;
       background-color: #ffffff;
