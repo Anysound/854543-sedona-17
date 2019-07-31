@@ -1,99 +1,149 @@
 .advantage {
   display: flex;
-  padding: 0 41px 0 25px;
+  padding: 0 35px 0 15px;
 
   &:nth-child(2) {
-    padding-bottom: 5px;
+    order: 1;
   }
 }
 
 .advantage__text {
   .promo__title {
-    text-align: left;
-    padding: 0;
     margin-top: 20px;
     margin-bottom: 13px;
+    padding: 0;
+    text-align: left;
   }
 
   .promo__review {
-    margin-top: 10px;
+    margin-top: 0;
+  }
+
+  .advantage__title {
+    margin-top: 14px;
+    margin-bottom: 15px;
   }
 }
 
-.advantage__img-house {
+.advantage__img--house {
   width: 39px;
   align-self: flex-start;
-  margin-top: 10px;
+  margin-top: 4px;
   margin-right: 13px;
 }
 
-.advantage__img-gift {
+.advantage__img--gift {
   width: 32px;
+  margin: 2px 16px 0 4px;
   align-self: flex-start;
-  margin-top: 10px;
-  margin-left: 4px;
-  margin-right: 16px;
 }
 
-.advantage__img-eat {
+.advantage__img--eat {
   width: 40px;
   align-self: flex-start;
-  margin-top: 10px;
-  margin-right: 12px;
+  margin-top: 7px;
+}
+
+.advantage__text--eat {
+  margin-left: 13px;
+
+  .promo__title {
+    margin-top: 13px;
+  }
 }
 
 .advantage__preview {
   text-align: left;
 }
 
-.advantage__text--eat {
-  .promo__title {
-    margin-top: 15px;
-  }
-}
-
 @media (min-width: $tablet-width) {
   .advantage {
     flex-direction: column;
     margin-top: 57px;
+
+    &:first-child {
+      position: relative;
+      left: -10px;
+      padding: 0 53px 0 5px;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      left: -20px;
+      padding: 0 2px 0 0;
+    }
+
+    &:last-child {
+      position: relative;
+      left: -56px;
+      padding: 0;
+    }
   }
 
-  .advantage__img-house,
-  .advantage__img-gift,
-  .advantage__img-eat {
+  .advantage__img--house,
+  .advantage__img--gift,
+  .advantage__img--eat {
     margin: 0 auto;
   }
 
-  .advantage__img-house {
+  .advantage__img--house {
     width: 75px;
   }
 
-  .advantage__img-gift {
-    width: 77px;
-    height: 68px;
-    padding-bottom: 5px;
-  }
-
-  .advantage__img-eat {
+  .advantage__img--gift {
     width: 64px;
-    padding-top: 14px;
+    height: 75px;
+    margin-top: 0;
+    padding-bottom: 0;
   }
 
-  .advantage__text .promo__title {
-    text-align: center;
-    margin-top: 27px;
+  .advantage__img--eat {
+    width: 77px;
+    margin-bottom: 2px;
+    padding-top: 5px;
   }
 
-  .advantage__preview {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 40px;
-    line-height: 1.5;
+  .advantage__text {
+    padding-bottom: 7px;
+
+    .promo__title {
+      margin-top: 28px;
+      text-align: center;
+    }
   }
 
   .advantage__text--eat {
+    margin-left: 0;
+
+    .promo__title {
+      margin: 25px 0 12px;
+    }
+
     .promo__review {
-      padding-top: 16px;
+      margin-bottom: 16px;
+      padding-top: 8px;
+    }
+  }
+
+  .advantage__preview {
+    padding: 5px 14px 40px;
+    text-align: center;
+    line-height: 1.5;
+
+    .advantage__one-line {
+      white-space: nowrap;
+    }
+  }
+
+  .advantage__text--gift {
+    .promo__title {
+      margin-top: 26px;
+    }
+  }
+
+  .advantage__text--house {
+    .promo__review {
+      padding: 5px 49px 40px;
     }
   }
 }
@@ -103,13 +153,46 @@
     margin-top: 47px;
   }
 
-  .advantage__img-gift {
+  .advantage__img--gift {
+    margin-left: 130px;
+    margin-top: -10px;
     padding: 5px 0 0 0;
   }
 
-  .advantage__text--eat {
+  .advantage__img--house {
+    margin-left: 160px;
+  }
+
+  .advantage__img--eat {
+    margin-left: 130px;
+  }
+
+  .advantage__text--house {
+    .promo__title {
+      margin-left: -25px;
+    }
+
     .promo__review {
-      padding-top: 17px;
+      margin-left: -20px;
+    }
+  }
+
+  .advantage__text--eat {
+    margin-left: 13px;
+
+    .promo__title {
+      margin-left: -45px;
+    }
+
+    .promo__review {
+      margin-left: -40px;
+      padding-top: 8px;
+    }
+  }
+
+  .advantage__text--gift {
+    .promo__title {
+      margin: 30px 0 14px -20px;
     }
   }
 }

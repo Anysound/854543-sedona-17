@@ -10,19 +10,19 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <nav class="nav">
+      <nav class="nav nav--opened nav--nojs">
         <button class="nav__btn-toggle"></button>
         <ul class="nav__list">
-          <li class="nav__item"><a href="#">ГЛАВНАЯ</a></li>
-          <li class="nav__item"><a href="photo.html">ФОТО И ВИДЕО</a></li>
-          <li class="nav__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
-          <li class="nav__item"><a href="#">HTML ACADEMY</a></li>
+          <li class="nav__item"><a href="#">главная</a></li>
+          <li class="nav__item"><a href="photo.html">фото и видео</a></li>
+          <li class="nav__item"><a href="form.html">форма отзыва</a></li>
+          <li class="nav__item"><a href="#">html academy</a></li>
         </ul>
       </nav>
-      <a href="#" class="logo header__logo">
+      <a class="logo header__logo" href="#">
       </a>
       <div class="header__text">
-        <img class="header__inner-text" src="img/text-sedona-index.svg" alt="">
+        <img class="header__inner-text" src="img/text-sedona-index.svg" alt="если есть на свете рай, это наш Седонский край">
         <div class="header__triangle-left"></div>
         <div class="header__triangle-right"></div>
       </div>
@@ -50,31 +50,31 @@
         </div>
         <div class="promo-item__advantages">
           <div class="advantage">
-            <img src="img/icon-house.svg" class="advantage__img-house" alt="">
-            <div class="advantage__text">
+            <img class="advantage__img--house" src="img/icon-house.svg"  alt="жилье">
+            <div class="advantage__text advantage__text--house">
               <h2 class="advantage__title promo__title">жилье</h2>
               <p class="advantage__preview promo__review">Рекомендуем пожить в настоящем <span> мотеле, все как в кино!</span></p>
             </div>
           </div>
           <div class="advantage">
-            <img src="img/icon-burger.svg" class="advantage__img-eat" alt="">
-            <div class="advantage__text advantage__text--eat">
-              <h2 class="advantage__title promo__title">еда</h2>
-              <p class="advantage__preview promo__review">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, <span> Вы НЕ разочаруетесь!</span></p>
+            <img class="advantage__img--gift" src="img/icon-gift.svg"  alt="сувениры">
+            <div class="advantage__text advantage__text--gift">
+              <h2 class="advantage__title promo__title">сувениры</h2>
+              <p class="advantage__preview promo__review">Не только китайского, <span> но и местного производства!</span></p>
             </div>
           </div>
           <div class="advantage">
-            <img src="img/icon-gift.svg" class="advantage__img-gift" alt="">
-            <div class="advantage__text">
-              <h2 class="advantage__title promo__title">сувениры</h2>
-              <p class="advantage__preview promo__review">Не только китайского, <span> но и местного производства!</span></p>
+            <img class="advantage__img--eat" src="img/icon-burger.svg"  alt="еда">
+            <div class="advantage__text advantage__text--eat">
+              <h2 class="advantage__title promo__title">еда</h2>
+              <p class="advantage__preview promo__review">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, <span class="advantage__one-line"> Вы НЕ разочаруетесь!</span></p>
             </div>
           </div>
         </div>
       </div>
       <div class="promo-item">
-        <div class="promo-item__text">
-          <h2 class="promo__title promo__title--white">там есть <span> мост дьявола</span></h2>
+        <div class="promo-item__text promo-item__text--bridge">
+          <h2 class="promo__title promo__title--white promo__title--bridge">там есть <span> мост дьявола</span></h2>
           <span class="promo-item__number">№2</span>
           <p class="promo__review promo__review--white">да, по нему можно пройти! если вы осмелитесь, конечно</p>
         </div>
@@ -92,7 +92,7 @@
           <div class="promo-item__text-gray">
             <h2 class="promo__title">красивая дорога</h2>
             <span class="promo-item__number promo-item__number--gray">№4</span>
-            <p class="promo__review">ехать в седону из лас-вегаса совсем <span> не скучно!</span></p>
+            <p class="promo__review promo__review--las-vegas">ехать в седону из лас-вегаса совсем  не скучно!</p>
           </div>
         </div>
         <div class="promo-item promo-item--small">
@@ -107,19 +107,19 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a class="footer__hash promo__title" href="">#visitsedona</a>
+      <a class="footer__hash promo__title" href="#">#visitsedona</a>
       <div class="social-icons footer__icons">
-        <a href="#" class="social-icons__link"><img src="img/icon-twitter.svg" alt=""></a>
-        <a href="#" class="social-icons__link"><img src="img/icon-facebook.svg" alt=""></a>
-        <!--как лучше сделать иконки соцсетей? так, как здесь, просто картинка в ссылке или через дивы и иконки fontawesome?-->
-        <a href="#" class="social-icons__link"><img src="img/icon-youtube.svg" alt=""></a>
+        <a class="social-icons__link" href="#"><img src="img/icon-twitter.svg" alt="наш twitter"></a>
+        <a class="social-icons__link" href="#"><img src="img/icon-facebook.svg" alt="наш facebook"></a>
+        <a class="social-icons__link" href="#"><img src="img/icon-youtube.svg" alt="наш youtube"></a>
       </div>
       <div class="footer__info">
         <p class="footer__dev">разработано</p>
-        <a href="#" class="footer__link"><img src="img/htmlacademy.svg" width="34" alt="htmlacademy"></a>
+        <a class="footer__link" href="#" ><img src="img/htmlacademy.svg" width="38" alt="htmlacademy"></a>
       </div>
     </div>
   </footer>
+  <script src="../js/common.js"></script>
 </body>
 
 </html>

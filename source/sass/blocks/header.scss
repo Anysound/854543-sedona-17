@@ -4,39 +4,41 @@
 }
 
 .header__logo {
-  height: 83px;
-  display: flex;
-  background-image: url("../../img/logo-sedona-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  margin: 0 auto;
   position: relative;
   z-index: 2;
+  display: flex;
+  width: 125px;
+  height: 83px;
+  margin: 0 auto;
+  background-image: url("../img/logo-sedona-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .header__text {
-  background: url("../../img/bg-back-mobile@1x.jpg") no-repeat;
-  height: 389px;
-  background-position: center;
-  margin-top: -27px;
+  position: relative;
   display: flex;
   justify-content: center;
-  position: relative;
+  height: 389px;
+  margin-top: -27px;
+  background-position: center;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
 }
 
 .header__inner-text {
-  margin-top: 10px;
   width: 280px;
+  margin-top: 10px;
 }
 
 /*photo.html*/
 .header__bg {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
   position: relative;
   top: -27px;
+  height: 159px;
   background-position: 45% 100%;
-  height: 160px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
 }
 
 .header__sedona {
@@ -54,7 +56,7 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 23px 0 0 160px;
+  border-width: 28px 0 0 160px;
   border-color: transparent transparent transparent #ffffff;
 }
 
@@ -66,7 +68,7 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 0 23px 160px;
+  border-width: 0 0 28px 160px;
   border-color: transparent transparent #ffffff transparent;
 }
 
@@ -77,13 +79,14 @@
 
   .header__bg {
     top: -85px;
-    padding-top: 90px;
     height: 200px;
-    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    padding-top: 90px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
   .header__sedona {
     width: 458px;
+    padding-top: 5px;
   }
 
   .header__triangle-left {
@@ -102,8 +105,8 @@
       position: absolute;
       left: -611px;
       bottom: -43px;
-      height: 88px;
       transform: rotate(6deg);
+      height: 88px;
       width: 283px;
       background-color: #ffffff;
     }
@@ -123,19 +126,19 @@
     &::after {
       content: "";
       position: absolute;
-      right: -261px;
-      top: 12px;
-      height: 88px;
-      transform: rotate(-6deg);
+      right: -61px;
+      top: 34px;
+      transform: rotate(-7deg);
       width: 283px;
+      height: 88px;
       background-color: #ffffff;
     }
   }
 
   .header__logo {
     position: relative;
-    width: 102px;
     top: -58px;
+    width: 102px;
   }
 
   .header__text {
@@ -143,7 +146,7 @@
     top: -55px;
     width: auto;
     height: 518px;
-    background: url("../../img/bg-back-tablet@1x.jpg");
+    background: url("../img/bg-back-tablet@1x.jpg");
   }
 
   .header__inner-text {
@@ -159,8 +162,8 @@
 
   .header__bg,
   .header__text {
-    background-image: url("../../img/bg-back-desktop@1x.jpg");
     height: 518px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 
   .header__text {
@@ -169,14 +172,14 @@
 
   .header__sedona {
     width: 461px;
-    padding-top: 90px;
+    padding-top: 100px;
   }
 
   .header__logo {
     top: -58px;
     width: 188px;
     height: 100px;
-    background-image: url("../../img/logo-sedona-desktop.svg");
+    background-image: url("../img/logo-sedona-desktop.svg");
   }
 
   .header__inner-text {
@@ -191,17 +194,17 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 58px 0 0 350px;
+    border-width: 50px 0 0 352px;
     border-color: transparent transparent transparent #ffffff;
 
     &::before {
       content: "";
       position: absolute;
       left: -611px;
-      bottom: -43px;
-      height: 88px;
+      bottom: -48px;
       transform: rotate(6deg);
       width: 283px;
+      height: 88px;
       background-color: #ffffff;
     }
   }
@@ -214,7 +217,7 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 58px 350px;
+    border-width: 0 0 50px 350px;
     border-color: transparent transparent #ffffff transparent;
 
     &::after {
@@ -222,16 +225,16 @@
       position: absolute;
       right: -261px;
       top: 12px;
-      height: 88px;
       transform: rotate(-6deg);
       width: 283px;
+      height: 88px;
       background-color: #ffffff;
     }
   }
 
   .header__bg {
-    padding: 0;
-    height: 295px;
     top: -100px;
+    height: 295px;
+    padding: 0;
   }
 }

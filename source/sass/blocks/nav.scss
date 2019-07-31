@@ -1,5 +1,6 @@
 .nav__item {
   height: 55px;
+  transition: all 0.3s;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
   background-color: #81b3d2;
@@ -12,12 +13,17 @@
 
   a {
     display: block;
+    font-size: 18px;
     color: #ffffff;
     text-decoration: none;
     line-height: 55px;
     font-family: "pt-sansBold", sans-serif;
-    font-size: 18px;
+    text-transform: uppercase;
   }
+}
+
+.nav {
+  position: relative;
 }
 
 .nav__list {
@@ -25,11 +31,88 @@
   margin: 0;
 }
 
+.nav__btn-toggle {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.nav--closed .nav__btn-toggle::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  right: 19px;
+  width: 23px;
+  height: 4px;
+  transition: all 0.3s;
+  background-color: #81b3d2;
+  box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
+}
+
+.nav--opened {
+  transition: all 0.3s;
+}
+
+.nav--closed .nav__btn-toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.nav--opened .nav__btn-toggle {
+  top: 27px;
+  left: auto;
+  right: 0;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: 16px;
+    width: 28px;
+    height: 5px;
+    transition: all 0.3s;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.nav--nojs {
+  .nav__btn-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .nav--closed .nav__item {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .nav__list {
     display: flex;
-    margin: 0 auto;
     width: 716px;
+    margin: 0 auto;
   }
 
   .nav__item {
@@ -39,9 +122,10 @@
     color: #000000;
 
     a {
+      font-size: 14px;
+      line-height: 53px;
       color: #000000;
       white-space: nowrap;
-      font-size: 14px;
     }
 
     &:first-child {
@@ -74,16 +158,16 @@
 
   .nav__item {
     &:first-child {
-      margin: 0 152px 0 81px;
+      margin: 0 142px 0 81px;
       padding: 0;
     }
 
     &:nth-child(2) {
-      margin-right: 372px;
+      margin-right: 362px;
     }
 
     &:last-child {
-      margin-left: 78px;
+      margin-left: 68px;
     }
 
     a {
