@@ -8,8 +8,8 @@
 }
 
 .form-item__inner-wrapper {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,20 +17,21 @@
     order: -1;
   }
 
-  .form-item--contacts , .form-item--visited , .form-item--description {
+  .form-item--contacts,
+  .form-item--visited,
+  .form-item--description {
     width: 100%;
   }
 
   .form-item__visit-wrapper {
     width: 50%;
   }
-}
 
   .form-item__inner-wrapper {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
 
 @media (min-width: $desktop-width) {
   .form-item--visited {
