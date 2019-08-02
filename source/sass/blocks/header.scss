@@ -89,6 +89,7 @@
     height: 200px;
     padding-top: 90px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    overflow: hidden;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -138,11 +139,11 @@
     &::after {
       content: "";
       position: absolute;
-      right: -61px;
+      right: -39px;
       top: 34px;
       transform: rotate(-7deg);
       width: 283px;
-      height: 88px;
+      height: 41px;
       background-color: #ffffff;
     }
   }
