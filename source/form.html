@@ -33,6 +33,73 @@
       </div>
     </div>
   </header>
+  <main class="feedback">
+    <article class="feedback__heading">
+      <h1 class="promo__title">Оставьте свой отзыв</h1>
+      <p class="promo__review">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них,
+        а также о посещенных вами достопримечательностях
+      </p>
+    </article>
+    <form class="feedback__form">
+      <section class="form-item form-item--introduce">
+        <p class="promo__title">Представьтесь</p>
+        <label for="form-item__name">имя*:</label><input id="form-item__name" type="text" placeholder="Петр" name="">
+        <label for="form-item__surname">фамилия*:</label><input id="form-item__surname" type="text" placeholder="Иванов" name="">
+        <label for="form-item__patronymic">отчество:</label><input id="form-item__patronymic" type="text" placeholder="Александрович" name="">
+      </section>
+      <section class="form-item form-item--contacts">
+        <p class="promo__title">Контактная информация:</p>
+        <div class="form-item__wrapper">
+          <label for="form-item__tel">контактный телефон*:</label><input id="form-item__tel" type="tel" placeholder="Введите телефон" name="">
+          <div class="form-item__icon">
+            <img src="img/icon-phone.svg">
+          </div>
+        </div>
+        <div class="form-item__wrapper"> 
+          <label for="form-item__email">электронная почта*:</label><input id="form-item__email" type="email" placeholder="Введите e-mail" name="">
+          <div class="form-item__icon">
+            <img src="img/icon-mail.svg">
+          </div>
+        </div>  
+      </section>
+      <section class="form-item form-item--general">
+        <p class="promo__title">Ваше общее впечатление</p>
+        <input id="form-item__genenal-positive" type="radio" name="name"><label for="form-item__genenal-positive">скорее положительное</label>
+        <input id="form-item__genenal-negative" type="radio" name="name"><label for="form-item__genenal-negative">скорее отрицательное</label>
+        <input id="form-item__general-neutral" type="radio" name="name"><label for="form-item__general-neutral">затрудняюсь ответить</label>
+      </section>
+      <section class="form-item form-item--visited">
+        <p class="promo__title">посещенные достопримечательности</p>
+        <div class="form-item__inner-wrapper">
+          <div class="form-item__visit-wrapper">
+            <input id="form-item__bridge" type="checkbox" name="">
+            <label for="form-item__bridge">мост дьявола</label>
+          </div>  
+          <div class="form-item__visit-wrapper">
+            <input id="form-item__mountain" type="checkbox" name="">
+            <label for="form-item__mountain">гора-колокол</label>
+          </div>
+          <div class="form-item__visit-wrapper"> 
+            <input id="form-item__park" type="checkbox" name="">
+            <label for="form-item__park">слайд-парк</label>
+          </div>   
+          <div class="form-item__visit-wrapper">
+            <input id="form-item__rocks" type="checkbox" name="">
+            <label for="form-item__rocks">красные скалы</label>
+          </div>  
+        </div>
+      </section>
+      <section class="form-item form-item--description">
+        <p class="promo__title">опишите свои эмоции</p>
+        <textarea class="form-item__describe" placeholder="опишите подробно все свои восторги"></textarea>
+        <div class="feedback__wrapper">
+          <input class="form-item__send" type="submit" value="отправить отзыв" name="">
+          <p class="visually-hidden">* - обязательные поля</p>
+        </div>  
+      </section>
+    </form>
+  </main>
   <footer class="footer">
     <div class="footer__wrapper">
       <a class="footer__hash promo__title" href="#">#visitsedona</a>
