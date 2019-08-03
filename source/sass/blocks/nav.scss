@@ -21,6 +21,7 @@
     text-transform: uppercase;
 
     &:hover {
+      transition: all 0.3s;
       color: #81b3d2;
     }
 
