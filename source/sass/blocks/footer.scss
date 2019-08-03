@@ -38,6 +38,10 @@
 
 .footer__link {
   margin: 10px 0 0 6px;
+
+  &:hover {
+    color: #81b3d2;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -67,5 +71,24 @@
   .footer__wrapper {
     width: auto;
     padding: 0 120px;
+  }
+
+  .footer__link {
+    margin: 15px -10px 0 -2px;
+  }
+
+  .footer__dev {
+    margin: 25px 10px 0 0;
+  }
+
+  .footer__icon {
+    &:hover {
+      transition: all 0.3s;
+      fill: #81b3d2;
+    }
+
+    &:active {
+      fill: gray;
+    }
   }
 }

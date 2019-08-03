@@ -23,9 +23,7 @@
 }
 
 .gallery-items__icon {
-  path {
-    fill: rgba(0, 0, 0, 0.3);
-  }
+  fill: rgba(0, 0, 0, 0.3);
   margin: -3px 7px 0 0;
 }
 
@@ -56,19 +54,27 @@
 }
 
 .gallery-items__img--sunset {
-  background-image: url("../img/photo-sunset-mobile@1x.jpg");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/photo-sunset-mobile@2x.jpg");
+  }
 }
 
 .gallery-items__img--cactus {
-  background-image: url("../img/photo-cactus-mobile@1x.jpg");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/photo-cactus-mobile@2x.jpg");
+  }
 }
 
 .gallery-items__img--roads {
-  background-image: url("../img/photo-roads-mobile@1x.jpg");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/photo-roads-mobile@2x.jpg");
+  }
 }
 
 .gallery-items__img--bridge {
-  background-image: url("../img/photo-bridge-mobile@1x.jpg");
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/photo-bridge-mobile@2x.jpg");
+  }
 }
 
 
@@ -147,21 +153,32 @@
     .gallery-items__img--sunset {
       width: 648px;
       height: 400px;
-      background-image: url("../img/photo-sunset-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/photo-sunset-tablet@2x.jpg");
+      }
     }
 
     .gallery-items__img--cactus {
       margin: 0;
-      background-image: url("../img/photo-cactus-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/photo-cactus-tablet@2x.jpg");
+      }
     }
 
     .gallery-items__img--roads {
       left: -20px;
-      background-image: url("../img/photo-roads-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/photo-roads-tablet@2x.jpg");
+      }
     }
 
     .gallery-items__img--bridge {
-      background-image: url("../img/photo-bridge-tablet@1x.jpg");
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/photo-bridge-tablet@2x.jpg");
+      }
     }
 
     .gallery-items__wrapper {
@@ -257,7 +274,31 @@
 
     .gallery-items__img--sunset {
       width: $desktop-width;
-      background-image: url("../img/photo-sunset-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/photo-sunset-desktop@2x.jpg");
+        background-size: cover;
+      }
+    }
+
+    .gallery-items__img--cactus {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/photo-cactus-desktop@2x.jpg");
+        background-size: cover;
+      }
+    }
+
+    .gallery-items__img--roads {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/photo-roads-desktop@2x.jpg");
+        background-size: cover;
+      }
+    }
+
+    .gallery-items__img--bridge {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/photo-bridge-desktop@2x.jpg");
+      }
     }
 
     .gallery-items__wrapper {
@@ -277,9 +318,7 @@
   }
 
   .gallery-items__icon {
-    path {
-      fill: white;
-    }
+    fill: white;
     margin-right: 8px;
   }
 

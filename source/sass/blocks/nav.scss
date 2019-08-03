@@ -19,6 +19,16 @@
     line-height: 55px;
     font-family: "pt-sansBold", sans-serif;
     text-transform: uppercase;
+
+    &:hover {
+      transition: all 0.3s;
+      color: #81b3d2;
+    }
+
+    &:focus {
+      opacity: 0.3;
+      color: #000000;
+    }
   }
 }
 

@@ -151,29 +151,31 @@
 @media (min-width: $desktop-width) {
   .advantage {
     margin-top: 47px;
+    width: 400px;
   }
 
   .advantage__img--gift {
-    margin-left: 130px;
+    margin-left: 170px;
     margin-top: -10px;
     padding: 5px 0 0 0;
   }
 
   .advantage__img--house {
-    margin-left: 160px;
+    margin-left: 167px;
   }
 
   .advantage__img--eat {
-    margin-left: 130px;
+    margin-left: 180px;
   }
 
   .advantage__text--house {
     .promo__title {
-      margin-left: -25px;
+      margin-left: 26px;
     }
 
     .promo__review {
-      margin-left: -20px;
+      margin-left: 27px;
+      padding: 5px 44px 40px;
     }
   }
 
@@ -181,18 +183,22 @@
     margin-left: 13px;
 
     .promo__title {
-      margin-left: -45px;
+      margin-left: 45px;
     }
 
     .promo__review {
-      margin-left: -40px;
+      margin-left: 40px;
       padding-top: 8px;
     }
   }
 
   .advantage__text--gift {
     .promo__title {
-      margin: 30px 0 14px -20px;
+      margin: 30px 0 14px 25px;
+    }
+
+    .promo__review {
+      margin: 15px 2px 0 26px;
     }
   }
 }

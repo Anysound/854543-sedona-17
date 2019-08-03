@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: форма</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -19,7 +21,12 @@
           <li class="nav__item"><a href="#">html academy</a></li>
         </ul>
       </nav>
-      <a class="logo header__logo" href="#"></a>
+      <a class="logo header__logo" href="#">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="Седона">
+        </picture>
+      </a>
       <div class="header__bg">
         <img class="header__sedona" src="img/text-sedona.svg" alt="если есть на свете рай, это наш Седонский край">
         <div class="header__triangle-left"></div>
@@ -27,6 +34,73 @@
       </div>
     </div>
   </header>
+  <main class="feedback">
+    <article class="feedback__heading">
+      <h1 class="promo__title">Оставьте свой отзыв</h1>
+      <p class="promo__review">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них,
+        а также о посещенных вами достопримечательностях
+      </p>
+    </article>
+    <form class="feedback__form">
+      <section class="form-item form-item--introduce">
+        <p class="promo__title">Представьтесь</p>
+        <label for="name">имя*:</label><input id="name" type="text" placeholder="Петр" name="">
+        <label for="surname">фамилия*:</label><input id="surname" type="text" placeholder="Иванов" name="">
+        <label for="patronymic">отчество:</label><input id="patronymic" type="text" placeholder="Александрович" name="">
+      </section>
+      <section class="form-item form-item--contacts">
+        <p class="promo__title">Контактная информация:</p>
+        <div class="form-item__wrapper">
+          <label for="tel">контактный телефон*:</label><input id="tel" type="tel" placeholder="Введите телефон" name="">
+          <div class="form-item__icon">
+            <img src="img/icon-phone.svg">
+          </div>
+        </div>
+        <div class="form-item__wrapper">
+          <label for="email">электронная почта*:</label><input id="email" type="email" placeholder="Введите e-mail" name="">
+          <div class="form-item__icon">
+            <img src="img/icon-mail.svg">
+          </div>
+        </div>
+      </section>
+      <section class="form-item form-item--general">
+        <p class="promo__title">Ваше общее впечатление</p>
+        <input id="positive" type="radio" name="name"><label for="positive">скорее положительное</label>
+        <input id="negative" type="radio" name="name"><label for="negative">скорее отрицательное</label>
+        <input id="neutral" type="radio" name="name"><label for="neutral">затрудняюсь ответить</label>
+      </section>
+      <section class="form-item form-item--visited">
+        <p class="promo__title">посещенные достопримечательности</p>
+        <div class="form-item__inner-wrapper">
+          <div class="form-item__visit-wrapper">
+            <input id="bridge" type="checkbox" name="">
+            <label for="bridge">мост дьявола</label>
+          </div>
+          <div class="form-item__visit-wrapper">
+            <input id="mountain" type="checkbox" name="">
+            <label for="mountain">гора-колокол</label>
+          </div>
+          <div class="form-item__visit-wrapper">
+            <input id="park" type="checkbox" name="">
+            <label for="park">слайд-парк</label>
+          </div>
+          <div class="form-item__visit-wrapper">
+            <input id="rocks" type="checkbox" name="">
+            <label for="rocks">красные скалы</label>
+          </div>
+        </div>
+      </section>
+      <section class="form-item form-item--description">
+        <p class="promo__title">опишите свои эмоции</p>
+        <textarea class="form-item__describe" placeholder="опишите подробно все свои восторги"></textarea>
+        <div class="feedback__wrapper">
+          <input class="form-item__send" type="submit" value="отправить отзыв" name="">
+          <p class="visually-hidden">* - обязательные поля</p>
+        </div>
+      </section>
+    </form>
+  </main>
   <footer class="footer">
     <div class="footer__wrapper">
       <a class="footer__hash promo__title" href="#">#visitsedona</a>

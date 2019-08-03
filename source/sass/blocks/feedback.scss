@@ -1,0 +1,28 @@
+.feedback {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.feedback__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.visually-hidden {
+  font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: $tablet-width;
+  }
+
+  .feedback__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .visually-hidden {
+    font-size: 16px;
+  }
+}
