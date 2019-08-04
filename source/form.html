@@ -45,22 +45,37 @@
     <form class="feedback__form">
       <section class="form-item form-item--introduce">
         <h2 class="promo__title">Представьтесь</h2>
-        <label for="name">имя*:</label><input id="name" type="text" placeholder="Петр" name="name">
-        <label for="surname">фамилия*:</label><input id="surname" type="text" placeholder="Иванов" name="surname">
-        <label for="patronymic">отчество:</label><input id="patronymic" type="text" placeholder="Александрович" name="patronymic">
+        <div class="form-item__wrapper">  
+          <label class="promo__review" for="name">имя*:</label>
+          <input class="form-item__name" id="name" type="text" placeholder="Петр" name="name">
+        </div>  
+        <div class="form-item__wrapper">
+          <label class="promo__review" for="surname">фамилия*:</label>
+          <input class="form-item__surname" id="surname" type="text" placeholder="Иванов" name="surname">
+        </div>
+        <div class="form-item__wrapper">
+          <label class="promo__review" for="patronymic">отчество:</label>
+          <input class="form-item__patronymic" id="patronymic" type="text" placeholder="Александрович" name="patronymic">
+        </div>
       </section>
       <section class="form-item form-item--contacts">
         <h2 class="promo__title">Контактная информация:</h2>
         <div class="form-item__wrapper">
-          <label for="tel">контактный телефон*:</label><input id="tel" type="tel" placeholder="Введите телефон" name="tel">
-          <div class="form-item__icon">
-            <img src="img/icon-phone.svg" alt="телефон">
+          <label class="promo__review" for="tel">контактный телефон*:</label>
+          <div class="form-item__contact-wrapper">
+            <input class="form-item__tel" id="tel" type="tel" placeholder="Введите телефон" name="tel">
+            <div class="form-item__icon">
+              <img src="img/icon-phone.svg" alt="телефон">
+            </div>
           </div>
         </div>
         <div class="form-item__wrapper">
-          <label for="email">электронная почта*:</label><input id="email" type="email" placeholder="Введите e-mail" name="email">
-          <div class="form-item__icon">
-            <img src="img/icon-mail.svg">
+          <label class="promo__review" for="email">электронная почта*:</label>
+          <div class="form-item__contact-wrapper">
+            <input class="form-item__email" id="email" type="email" placeholder="Введите e-mail" name="email">
+            <div class="form-item__icon">
+              <img src="img/icon-mail.svg">
+            </div>
           </div>
         </div>
       </section>

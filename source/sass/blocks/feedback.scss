@@ -8,9 +8,16 @@
   justify-content: space-between;
 }
 
+.feedback__heading {
+  .promo__review {
+    line-height: 1.8;
+  }
+}
+
 .visually-hidden {
   font-size: 0;
 }
+
 
 @media (min-width: $tablet-width) {
   .feedback {

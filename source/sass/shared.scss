@@ -2,3 +2,30 @@ body {
   max-width: 100%;
   font-family: "pt-sans", "Arial", sans-serif;
 }
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+label[for="positive"]::before,
+label[for="negative"]::before,
+label[for="neutral"]::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+input[type="radio"]:checked + label::before,
+input[type="checkbox"]:checked + label::before {
+color: red;
+background-color: #1abc9c;
+
+}
+
+input:checked+label {
+  color: green;
+}
