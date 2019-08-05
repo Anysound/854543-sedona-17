@@ -8,24 +8,62 @@ input[type="checkbox"] {
   display: none;
 }
 
-label[for="positive"]::before,
-label[for="negative"]::before,
-label[for="neutral"]::before {
-  content: '';
+label {
+  display: block;
+  font-family: "pt-sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+label[for|="positive"]::before,
+label[for|="negative"]::before,
+label[for|="neutral"]::before {
+  content: "";
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
+  margin: 0 23px 0 0;
+  vertical-align: middle;
   background-color: #f2f2f2;
+  border: 17px solid #f2f2f2;
 }
 
-input[type="radio"]:checked + label::before,
-input[type="checkbox"]:checked + label::before {
-color: red;
-background-color: #1abc9c;
-
+label[for|="bridge"]::before,
+label[for|="mountain"]::before,
+label[for|="park"]::before,
+label[for|="rocks"]::before {
+  content: "";
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border-radius: 7px;
+  margin-right: 16px;
+  background-color: #f2f2f2;
+  vertical-align: middle;
+  border: 3px solid #ffffff;
 }
 
-input:checked+label {
-  color: green;
+input:checked[type="radio"] + label::before {
+  background-color: #000000;
+}
+
+input:checked[type="checkbox"] + label::before {
+  content: "";
+  background-image: url("../img/tick.svg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+label[for|="positive"],
+label[for|="negative"],
+label[for|="neutral"] {
+  margin-bottom: 15px;
+}
+
+label[for|="radio"],
+label[for|="checkbox"] {
+  color: #333333;
+  vertical-align: middle;
 }

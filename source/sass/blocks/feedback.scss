@@ -10,14 +10,14 @@
 
 .feedback__heading {
   .promo__review {
-    line-height: 1.8;
+    margin: 27px 0 20px;
+    line-height: 1.7;
+  }
+
+  .promo__title {
+    margin-top: 10px;
   }
 }
-
-.visually-hidden {
-  font-size: 0;
-}
-
 
 @media (min-width: $tablet-width) {
   .feedback {
@@ -27,9 +27,5 @@
   .feedback__form {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .visually-hidden {
-    font-size: 16px;
   }
 }
