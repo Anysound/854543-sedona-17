@@ -159,10 +159,18 @@
   .form-item--general {
     order: -1;
     width: 334px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 29px;
   }
 
   .form-item--introduce {
     width: 334px;
+    padding-left: 0;
+
+    .promo__title {
+      margin-top: 15px;
+      margin-left: -60px;
+    }
   }
 
   .form-item--contacts,
@@ -182,6 +190,12 @@
 
   .form-item__reqiured-fields {
     font-size: 0;
+  }
+
+  .form-item__name,
+  .form-item__surname,
+  .form-item__patronymic {
+    margin-left: 0;
   }
 }
 

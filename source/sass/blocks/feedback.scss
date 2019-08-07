@@ -27,5 +27,19 @@
   .feedback__form {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 40px;
+  }
+
+  .feedback__heading {
+    .promo__title {
+      font-size: 30px;
+      font-weight: 700;
+      margin-top: -10px;
+    }
+
+    .promo__review {
+      padding: 0 21%;
+      margin-top: 31px;
+    }
   }
 }

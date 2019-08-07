@@ -67,3 +67,17 @@ label[for|="checkbox"] {
   color: #333333;
   vertical-align: middle;
 }
+
+@media (min-width: 768px) {
+  label[for|="positive"] {
+    margin: 33px 0 0 32px;
+  }
+
+  label[for|="negative"] {
+    margin: 25px 0 0 32px;
+  }
+
+  label[for|="neutral"] {
+    margin: 25px 0 0 32px;
+  }
+}
