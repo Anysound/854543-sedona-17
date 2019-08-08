@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Фото и видео</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -159,6 +158,10 @@
     </div>
   </footer>
   <script src="../js/common.js"></script>
+  <script type="text/javascript">
+    if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+      document.write('<script src="js/picturefill.js"><\/script>');
+</script>
 </body>
 
 </html>
