@@ -8,8 +8,15 @@
   justify-content: space-between;
 }
 
-.visually-hidden {
-  font-size: 0;
+.feedback__heading {
+  .promo__review {
+    margin: 27px 0 20px;
+    line-height: 1.7;
+  }
+
+  .promo__title {
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -20,9 +27,19 @@
   .feedback__form {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 40px;
   }
 
-  .visually-hidden {
-    font-size: 16px;
+  .feedback__heading {
+    .promo__title {
+      font-size: 30px;
+      font-weight: 700;
+      margin-top: -10px;
+    }
+
+    .promo__review {
+      padding: 0 21%;
+      margin-top: 31px;
+    }
   }
 }

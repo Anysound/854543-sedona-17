@@ -18,7 +18,7 @@
           <li class="nav__item"><a href="index.html">главная</a></li>
           <li class="nav__item"><a href="photo.html">фото и видео</a></li>
           <li class="nav__item"><a href="form.html">форма отзыва</a></li>
-          <li class="nav__item"><a href="#">html academy</a></li>
+          <li class="nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">html academy</a></li>
         </ul>
       </nav>
       <a class="logo header__logo" href="#">
@@ -44,66 +44,81 @@
     </article>
     <form class="feedback__form">
       <section class="form-item form-item--introduce">
-        <p class="promo__title">Представьтесь</p>
-        <label for="name">имя*:</label><input id="name" type="text" placeholder="Петр" name="">
-        <label for="surname">фамилия*:</label><input id="surname" type="text" placeholder="Иванов" name="">
-        <label for="patronymic">отчество:</label><input id="patronymic" type="text" placeholder="Александрович" name="">
+        <h2 class="promo__title">Представьтесь</h2>
+        <div class="form-item__wrapper">
+          <label class="promo__review" for="name">имя*:</label>
+          <input class="form-item__name" id="name" type="text" placeholder="Петр" name="name">
+        </div>
+        <div class="form-item__wrapper">
+          <label class="promo__review" for="surname">фамилия*:</label>
+          <input class="form-item__surname" id="surname" type="text" placeholder="Иванов" name="surname">
+        </div>
+        <div class="form-item__wrapper">
+          <label class="promo__review" for="patronymic">отчество:</label>
+          <input class="form-item__patronymic" id="patronymic" type="text" placeholder="Александрович" name="patronymic">
+        </div>
       </section>
       <section class="form-item form-item--contacts">
-        <p class="promo__title">Контактная информация:</p>
+        <h2 class="promo__title">Контактная информация:</h2>
         <div class="form-item__wrapper">
-          <label for="tel">контактный телефон*:</label><input id="tel" type="tel" placeholder="Введите телефон" name="">
-          <div class="form-item__icon">
-            <img src="img/icon-phone.svg">
+          <label class="promo__review" for="tel">контактный телефон*:</label>
+          <div class="form-item__contact-wrapper">
+            <input class="form-item__tel" id="tel" type="tel" placeholder="Введите телефон" name="tel">
+            <div class="form-item__icon">
+              <img src="img/icon-phone.svg" alt="телефон">
+            </div>
           </div>
         </div>
         <div class="form-item__wrapper">
-          <label for="email">электронная почта*:</label><input id="email" type="email" placeholder="Введите e-mail" name="">
-          <div class="form-item__icon">
-            <img src="img/icon-mail.svg">
+          <label class="promo__review" for="email">электронная почта*:</label>
+          <div class="form-item__contact-wrapper">
+            <input class="form-item__email" id="email" type="email" placeholder="Введите e-mail" name="email">
+            <div class="form-item__icon">
+              <img src="img/icon-mail.svg">
+            </div>
           </div>
         </div>
       </section>
       <section class="form-item form-item--general">
-        <p class="promo__title">Ваше общее впечатление</p>
-        <input id="positive" type="radio" name="name"><label for="positive">скорее положительное</label>
-        <input id="negative" type="radio" name="name"><label for="negative">скорее отрицательное</label>
-        <input id="neutral" type="radio" name="name"><label for="neutral">затрудняюсь ответить</label>
+        <h2 class="promo__title">Ваше общее впечатление</h2>
+        <input id="positive" type="radio" name="name"><label for="positive">Скорее положительное</label>
+        <input id="negative" type="radio" name="name"><label for="negative">Скорее отрицательное</label>
+        <input id="neutral" type="radio" name="name"><label for="neutral">Затрудняюсь ответить</label>
       </section>
       <section class="form-item form-item--visited">
-        <p class="promo__title">посещенные достопримечательности</p>
+        <h2 class="promo__title">посещенные достопримечательности</h2>
         <div class="form-item__inner-wrapper">
           <div class="form-item__visit-wrapper">
-            <input id="bridge" type="checkbox" name="">
-            <label for="bridge">мост дьявола</label>
+            <input id="bridge" type="checkbox" name="bridge">
+            <label for="bridge">Мост Дьявола</label>
           </div>
           <div class="form-item__visit-wrapper">
-            <input id="mountain" type="checkbox" name="">
-            <label for="mountain">гора-колокол</label>
+            <input id="mountain" type="checkbox" name="mountain">
+            <label for="mountain">Гора-Колокол</label>
           </div>
           <div class="form-item__visit-wrapper">
-            <input id="park" type="checkbox" name="">
-            <label for="park">слайд-парк</label>
+            <input id="park" type="checkbox" name="park">
+            <label for="park">Слайд-парк</label>
           </div>
           <div class="form-item__visit-wrapper">
-            <input id="rocks" type="checkbox" name="">
-            <label for="rocks">красные скалы</label>
+            <input id="rocks" type="checkbox" name="rocks">
+            <label for="rocks">Красные скалы</label>
           </div>
         </div>
       </section>
       <section class="form-item form-item--description">
-        <p class="promo__title">опишите свои эмоции</p>
+        <h2 class="promo__title">опишите свои эмоции</h2>
         <textarea class="form-item__describe" placeholder="опишите подробно все свои восторги"></textarea>
         <div class="feedback__wrapper">
-          <input class="form-item__send" type="submit" value="отправить отзыв" name="">
-          <p class="visually-hidden">* - обязательные поля</p>
+          <input class="form-item__send promo__title" type="submit" value="отправить отзыв" name="send">
+          <p class="form-item__reqiured-fields">* - обязательные поля</p>
         </div>
       </section>
     </form>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a class="footer__hash promo__title" href="#">#visitsedona</a>
+      <a class="footer__hash promo__title promo__title--form" href="#">#visitsedona</a>
       <div class="social-icons footer__icons">
         <a class="social-icons__link" href="#"><img src="img/icon-twitter.svg" alt="наш twitter"></a>
         <a class="social-icons__link" href="#"><img src="img/icon-facebook.svg" alt="наш facebook"></a>
@@ -111,7 +126,7 @@
       </div>
       <div class="footer__info">
         <p class="footer__dev">разработано</p>
-        <a class="footer__link" href="#" ><img src="img/htmlacademy.svg" width="38" alt="htmlacademy"></a>
+        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><img src="img/htmlacademy.svg" width="38" alt="htmlacademy"></a>
       </div>
     </div>
   </footer>
