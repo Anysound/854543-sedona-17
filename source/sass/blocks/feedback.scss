@@ -43,3 +43,19 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    width: $desktop-width;
+  }
+
+  .feedback__heading {
+    .promo__title {
+      margin-top: 17px;
+    }
+
+    .promo__review {
+      padding: 0 31.5%;
+    }
+  }
+}
