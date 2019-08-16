@@ -5,9 +5,26 @@
   width: 46px;
   height: 48px;
   margin-right: 6px;
-  background: #81b3d2;
+  background-color: #81b3d2;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: #669ec0;
+  }
+
+  svg {
+    fill: white;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    svg {
+      fill: rgba(255, 255, 255, 0.3)
+    }
   }
 }

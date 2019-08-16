@@ -102,9 +102,11 @@
 
 .promo-item__img--city {
   background-image: url("../img/main-city-mobile@1x.jpg");
+  background-color: #9ca894;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/main-city-mobile@2x.jpg");
+    background-color: #9ca894;
     background-size: cover;
   }
 }
@@ -113,9 +115,11 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url("../img/photo-bridge-mobile@1x.jpg");
+  background-color: #b7826e;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/photo-bridge-mobile@2x.jpg");
+    background-color: #b7826e;
   }
 }
 

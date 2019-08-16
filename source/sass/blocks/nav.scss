@@ -32,6 +32,8 @@
   }
 }
 
+
+
 .nav {
   position: relative;
 }
@@ -182,6 +184,15 @@
 
     a {
       padding: 0 10px;
+    }
+  }
+
+  .nav__item--active a {
+    color: #766357;
+
+    &:hover {
+      transition: all 0.3s;
+      color: #604e43;
     }
   }
 }

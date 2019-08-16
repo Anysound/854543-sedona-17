@@ -20,10 +20,12 @@
   margin-top: -27px;
   background-position: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #89716c;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-color: #89716c;
     background-size: cover;
   }
 }
@@ -40,10 +42,12 @@
   height: 159px;
   background-position: 45% 100%;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-color: #89716c;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-color: #89716c;
     background-size: cover;
   }
 }
