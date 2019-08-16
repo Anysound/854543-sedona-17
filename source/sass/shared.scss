@@ -3,6 +3,10 @@ body {
   font-family: "pt-sans", "Arial", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
   display: none;

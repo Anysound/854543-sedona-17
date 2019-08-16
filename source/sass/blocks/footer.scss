@@ -78,11 +78,11 @@
   }
 
   .footer__link {
-    margin: 15px -10px 0 -2px;
+    margin: 20px -13px 0 5px;
   }
 
   .footer__dev {
-    margin: 25px 10px 0 0;
+    margin: 28px 1px 0 0;
   }
 
   .footer__icon {
@@ -94,5 +94,9 @@
     &:active {
       fill: gray;
     }
+  }
+
+  .footer__wrapper .promo__title--form {
+    margin-bottom: 63px;
   }
 }
