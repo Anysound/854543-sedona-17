@@ -18,118 +18,20 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.gallery-item__link {
-  color: black;
-  display: flex;
-}
+
 
 .gallery__title {
   margin-top: 8px;
 }
 
-.gallery-items__icon {
-  fill: rgba(0, 0, 0, 0.3);
-  margin: -3px 7px 0 0;
-}
 
-.gallery-items__item {
-  display: flex;
-  flex-direction: column;
-  padding: 22px 20px 19px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-  &:nth-child(2) {
-    padding: 22px 20px 19px;
-  }
-}
-
-.gallery-items__author {
-  margin-top: 0;
-  font-weight: 400;
-  font-size: 14px;
-  color: #333333;
-}
-
-.gallery-items__img {
-  width: 280px;
-  height: 280px;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.gallery-items__img--sunset {
-  background-color: #e59b52;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/photo-sunset-mobile@2x.jpg");
-    background-color: #e59b52;
-  }
-}
-
-.gallery-items__img--cactus {
-  background-color: #94553a;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/photo-cactus-mobile@2x.jpg");
-    background-color: #94553a;
-  }
-}
-
-.gallery-items__img--roads {
-  background-color: #47742e;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/photo-roads-mobile@2x.jpg");
-    background-color: #47742e;
-  }
-}
-
-.gallery-items__img--bridge {
-  background-color: #d4725a;
-  
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/photo-bridge-mobile@2x.jpg");
-    background-color: #d4725a;
-  }
-}
-
-
-.gallery-items__item--places,
-.gallery-items__item--veget,
-.gallery-items__item--roads,
-.gallery-items__item--bridge {
-  position: relative;
-  top: -1px;
-  left: 4px;
-  display: inline-block;
-  font-size: 13px;
-  font-family: "pt-sansBold", sans-serif;
-}
-
-
-.gallery-items__text--veget {
-  .promo__title--small {
-    margin: 19px 0 2px;
-  }
-}
-
-.gallery-items__text--roads {
-  .promo__title--small {
-    margin: 14px 0 2px;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .gallery {
     width: $tablet-width;
   }
 
-  .gallery-items {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 22px 0 0 60px;
-  }
+  
 
   .gallery__text {
     padding-bottom: 20px;
@@ -146,118 +48,16 @@
   }
 
 
-  .gallery-items__item {
-    padding: 22px 60px 0;
-    border-bottom: none;
+  
 
-    &:nth-child(2) {
-      width: 324px;
-      padding: 0 0 0 60px;
-    }
-
-    &:nth-child(3) {
-      padding: 0;
-    }
-
-    &:last-child {
-      padding: 0 0 0 0px;
-    }
-
-    .gallery-items__img {
-      width: 324px;
-      height: 267px;
-    }
-
-    .gallery-items__img--sunset {
-      width: 648px;
-      height: 400px;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/photo-sunset-tablet@2x.jpg");
-      }
-    }
-
-    .gallery-items__img--cactus {
-      margin: 0;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/photo-cactus-tablet@2x.jpg");
-      }
-    }
-
-    .gallery-items__img--roads {
-      left: -20px;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/photo-roads-tablet@2x.jpg");
-      }
-    }
-
-    .gallery-items__img--bridge {
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/photo-bridge-tablet@2x.jpg");
-      }
-    }
-
-    .gallery-items__wrapper {
-      display: flex;
-      justify-content: space-between;
-      height: 80px;
-      background: #f2f2f2;
-    }
-
-    .gallery-items__likes {
-      display: flex;
-      align-items: center;
-
-      .gallery-items__item--places {
-        margin: 6px 21px 0 0;
-      }
-
-      .gallery-items__item--veget {
-        margin: 2px 34px 0 0;
-      }
-
-      .gallery-items__item--roads {
-        margin: 0 39px 0 0;
-      }
-
-      .gallery-items__item--bridge {
-        margin: 4px 36px 0 0;
-      }
-
-      img {
-        margin-right: 9px;
-      }
-    }
-  }
-
-  .gallery-items__text {
-    margin-left: 20px;
-
-    .promo__title {
-      margin: 15px 0 3px;
-      font-size: 14px;
-    }
-  }
-
-  .gallery-items__author {
-    font-size: 14px;
-  }
+  
 
   .gallery__review {
     padding: 10px 170px;
   }
 
 
-  .gallery-items__likes {
-    display: flex;
-    align-items: center;
-
-    .gallery-items--veget {
-      margin: 6px 67px 0 0;
-    }
-  }
+  
 }
 
 @media (min-width: $desktop-width) {
@@ -265,86 +65,7 @@
     width: $desktop-width;
   }
 
-  .gallery-items {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-  }
-
-  .gallery-items__item {
-    padding: 0;
-
-    &:nth-child(2) {
-      position: relative;
-      top: -80px;
-      width: 400px;
-      padding: 0;
-    }
-
-    &:nth-child(3) {
-      position: relative;
-      top: -80px;
-    }
-
-    &:last-child {
-      position: relative;
-      padding: 0;
-      height: 400px;
-    }
-
-    .gallery-items__img {
-      width: 400px;
-    }
-
-    .gallery-items__img--sunset {
-      width: $desktop-width;
-
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/photo-sunset-desktop@2x.jpg");
-        background-size: cover;
-      }
-    }
-
-    .gallery-items__img--cactus {
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/photo-cactus-desktop@2x.jpg");
-        background-size: cover;
-      }
-    }
-
-    .gallery-items__img--roads {
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/photo-roads-desktop@2x.jpg");
-        background-size: cover;
-      }
-    }
-
-    .gallery-items__img--bridge {
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/photo-bridge-desktop@2x.jpg");
-      }
-    }
-
-    .gallery-items__wrapper {
-      position: relative;
-      top: -80px;
-      background-color: rgba(0, 0, 0, 0.3);
-      color: #ffffff;
-    }
-
-    .promo__title {
-      color: #ffffff;
-    }
-
-    .gallery-items__author {
-      color: #ffffff;
-    }
-  }
-
-  .gallery-items__icon {
-    fill: white;
-    margin-right: 8px;
-  }
+  
 
   .gallery__text {
     padding-bottom: 10px;

@@ -27,20 +27,32 @@
 .form-item__surname,
 .form-item__patronymic {
   margin-left: auto;
-  border: none;
+  border: 4px solid #f2f2f2;
   padding: 0 0 0 22px;
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+
+  &:focus {
+    background-color: white;
+    border: 4px solid #e5e5e5;
+    outline: none;
+  }
 }
 
 .form-item__name {
   width: 210px;
-  height: 58px;
+  height: 50px;
   background-color: #f2f2f2;
 }
 
 .form-item__surname,
 .form-item__patronymic {
   width: 172px;
-  height: 58px;
+  height: 50px;
   background-color: #f2f2f2;
 }
 
@@ -86,11 +98,23 @@
 .form-item__email,
 .form-item__tel {
   position: relative;
-  width: 258px;
-  height: 58px;
+  width: 250px;
+  height: 50px;
   background-color: #f2f2f2;
-  border: none;
+  border: 4px solid #f2f2f2;
   padding: 0 0 0 22px;
+
+  &:hover {
+    transition: all 0.3s;
+    background-color: #e5e5e5;
+    border: 4px solid #e5e5e5;
+  }
+
+  &:focus {
+    background-color: white;
+    border: 4px solid #e5e5e5;
+    outline: none;
+  }
 }
 
 .form-item__contact-wrapper {
@@ -487,7 +511,7 @@
     }
 
     &:nth-of-type(2),
-    &:nth-of-type(3), {
+    &:nth-of-type(3) {
       margin: 40px 0 0 53px;
     }
     &:last-of-type {

@@ -7,6 +7,7 @@
   .promo__title {
     margin-top: 30px;
     text-align: center;
+    font-size: 22px;
   }
 
   .promo__title--form {
@@ -41,11 +42,22 @@
 }
 
 .footer__link {
-  margin: 10px 0 0 6px;
+  margin: 8px 0 0 8px;
 
-  &:hover {
-    color: #81b3d2;
+  svg {
+    &:hover {
+      fill: #81b3d2;
+    }
+
+    &:active {
+      fill: rgba(0, 0, 0, 0.3)
+    }
   }
+}
+
+.footer__icon {
+  width: 37px;
+  height: 40px;
 }
 
 @media (min-width: $tablet-width) {

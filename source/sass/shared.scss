@@ -33,6 +33,20 @@ label[for|="neutral"]::before {
   border: 17px solid #f2f2f2;
 }
 
+label[for|="positive"],
+label[for|="negative"],
+label[for|="neutral"] {
+  &:hover::before {
+    background-color: #e5e5e5;
+    border: 17px solid #e5e5e5;
+  }
+
+  &:active::before {
+    border: 17px solid #d5d5d5;
+    background-color: rgba(3, 3, 3, 0.3);
+  }
+}
+
 label[for|="bridge"]::before,
 label[for|="mountain"]::before,
 label[for|="park"]::before,
@@ -48,9 +62,24 @@ label[for|="rocks"]::before {
   border: 3px solid #ffffff;
 }
 
+label[for|="bridge"],
+label[for|="mountain"],
+label[for|="park"],
+label[for|="rocks"] {
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    transition: all 0.3s;
+    background-color: #d5d5d5
+  }
+}
+
 input:checked[type="radio"] + label::before {
   background-color: #000000;
 }
+
 
 input:checked[type="checkbox"] + label::before {
   content: "";
@@ -59,6 +88,11 @@ input:checked[type="checkbox"] + label::before {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
+input:checked[type="checkbox"] + label:active::before {
+  opacity: 0.5;
+}
+
 
 label[for|="positive"],
 label[for|="negative"],

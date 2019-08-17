@@ -22,12 +22,14 @@
 
     &:hover {
       transition: all 0.3s;
-      color: #81b3d2;
+      color: white;
+      background-color: #669ec0;
     }
 
     &:focus {
       opacity: 0.3;
       color: #000000;
+      background-color: #5496bd;
     }
   }
 }
@@ -67,9 +69,6 @@
   box-shadow: 0 9px 0 0 #81b3d2, 0 18px 0 0 #81b3d2;
 }
 
-.nav--opened {
-  transition: all 0.3s;
-}
 
 .nav--closed .nav__btn-toggle:active::before {
   background-color: rgba(255, 255, 255, 0.3);
@@ -138,6 +137,17 @@
       line-height: 53px;
       color: #000000;
       white-space: nowrap;
+
+      &:hover {
+        transition: all 0.3s;
+        background-color: transparent;
+        color: #81b3d2;
+      }
+  
+      &:focus {
+        opacity: 0.3;
+        color: #000000;
+      }
     }
 
     &:first-child {
