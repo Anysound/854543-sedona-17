@@ -1,0 +1,78 @@
+.map {
+  width: 320px;
+  margin: 0 auto;
+  padding: 7px 0 0;
+
+  iframe {
+    height: 350px;
+  }
+
+  .promo__title {
+    font-size: 21px;
+  }
+
+  .promo__review {
+    margin-top: 21px;
+    line-height: 1.7;
+    padding: 0px 20px 0;
+  }
+}
+
+.map__find-btn {
+  position: relative;
+  display: block;
+  width: 280px;
+  height: 58px;
+  background-color: #81b3d2;
+  margin: 35px auto 50px;
+  text-align: center;
+  line-height: 57px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    width: $tablet-width;
+
+    .promo__title {
+      margin-top: 50px;
+      font-size: 30px;
+    }
+
+    .promo__review {
+      margin-top: 30px;
+      line-height: 1.8;
+
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .map__find-btn {
+    width: 458px;
+    margin: 38px auto 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    width: $desktop-width;
+
+    .promo__review {
+      padding: 0 26%;
+    }
+  }
+
+  .map__find-btn {
+    width: 458px;
+    margin: 44px auto 63px;
+  }
+  
+}
