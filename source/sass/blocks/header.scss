@@ -32,7 +32,7 @@
 
 .header__inner-text {
   width: 280px;
-  margin-top: 10px;
+  margin-top: -70px;
 }
 
 /*photo.html*/
@@ -210,20 +210,20 @@
 
   .header__triangle-left {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     left: 250px;
     display: inline-block;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 50px 0 0 352px;
+    border-width: 55px 0 0 352px;
     border-color: transparent transparent transparent #ffffff;
 
     &::before {
       content: "";
       position: absolute;
       left: -611px;
-      bottom: -48px;
+      bottom: -45px;
       transform: rotate(6deg);
       width: 283px;
       height: 88px;
@@ -239,14 +239,14 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 50px 350px;
+    border-width: 0 0 55px 350px;
     border-color: transparent transparent #ffffff transparent;
 
     &::after {
       content: "";
       position: absolute;
       right: -261px;
-      top: 12px;
+      top: 11px;
       transform: rotate(-6deg);
       width: 283px;
       height: 88px;

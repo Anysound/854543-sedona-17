@@ -30,6 +30,7 @@
 
 .promo__review--description {
   line-height: 2;
+  padding: 0 20px;
 }
 
 .promo-item {
@@ -157,7 +158,7 @@
 
   .promo__review {
     margin: 15px 0 19px;
-    padding: 0 20px 27px;
+    padding: 0 15px 27px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -266,9 +267,7 @@
     top: 0;
   }
 
-  .promo-item--small {
-    height: 256px;
-  }
+  
 
   .promo-item__img {
     top: 0;
@@ -345,6 +344,14 @@
     .promo-item__text {
       order: 1;
     }
+  }
+
+  .promo-item__text-gray {
+    padding-bottom: 7px;
+  }
+
+  .promo-item--small {
+    padding-bottom: 5px;
   }
 }
 

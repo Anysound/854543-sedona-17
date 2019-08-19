@@ -34,6 +34,9 @@
 }
 
 .footer__dev {
+  position: relative;
+  top: 2px;
+  left: 2px;
   line-height: 26px;
   color: #000000;
   font-size: 14px;
@@ -56,8 +59,11 @@
 }
 
 .footer__icon {
-  width: 37px;
-  height: 40px;
+  position: relative;
+  top: 2px;
+  left: 2px;
+  width: 39px;
+  height: 38px;
 }
 
 @media (min-width: $tablet-width) {
@@ -77,6 +83,18 @@
   .footer__info {
     padding-top: 10px;
   }
+
+  .footer__dev {
+    position: relative;
+    top: 10px;
+    left: 16px;
+  }
+
+  .footer__link {
+    position: relative;
+    top: 10px;
+    left: 15px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -90,11 +108,24 @@
   }
 
   .footer__link {
-    margin: 20px -13px 0 5px;
+    margin: 7px 0px 0 5px;
+  }
+
+  .footer__icon {
+    width: 41px;
+    height: 47px;
+  }
+
+  .footer__hash {
+    position: relative;
+    top: 3px;
   }
 
   .footer__dev {
-    margin: 28px 1px 0 0;
+    position: relative;
+    top: 13px;
+    left: 17px;
+    //margin: 22px 12px 0 0px;
   }
 
   .footer__icon {

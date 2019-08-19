@@ -1,3 +1,8 @@
+.social-icons {
+  position: relative;
+  top: 3px;
+}
+
 .social-icons__link {
   display: flex;
   justify-content: center;
@@ -26,5 +31,17 @@
     svg {
       fill: rgba(255, 255, 255, 0.3)
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social-icons {
+    margin-left: 105px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-icons {
+    margin-left: 263px;
   }
 }

@@ -158,7 +158,7 @@
     .gallery-items__wrapper {
       display: flex;
       justify-content: space-between;
-      height: 80px;
+      padding: 0px 0 5px;
       background: #f2f2f2;
     }
 
@@ -280,7 +280,7 @@
     }
 
     .gallery-items__wrapper--places {
-      top: -70px;
+      top: -80px;
     }
 
     .promo__title {
