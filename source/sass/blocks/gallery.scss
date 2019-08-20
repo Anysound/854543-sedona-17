@@ -18,20 +18,14 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-
-
 .gallery__title {
   margin-top: 8px;
 }
-
-
 
 @media (min-width: $tablet-width) {
   .gallery {
     width: $tablet-width;
   }
-
-  
 
   .gallery__text {
     padding-bottom: 20px;
@@ -47,25 +41,15 @@
     }
   }
 
-
-  
-
-  
-
   .gallery__review {
     padding: 10px 170px;
   }
-
-
-  
 }
 
 @media (min-width: $desktop-width) {
   .gallery {
     width: $desktop-width;
   }
-
-  
 
   .gallery__text {
     padding-bottom: 10px;

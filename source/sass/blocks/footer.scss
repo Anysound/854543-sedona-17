@@ -53,7 +53,7 @@
     }
 
     &:active {
-      fill: rgba(0, 0, 0, 0.3)
+      fill: rgba(0, 0, 0, 0.3);
     }
   }
 }
@@ -108,12 +108,21 @@
   }
 
   .footer__link {
-    margin: 7px 0px 0 5px;
+    margin: 7px 0 0 5px;
   }
 
   .footer__icon {
     width: 41px;
     height: 47px;
+
+    &:hover {
+      transition: all 0.3s;
+      fill: #81b3d2;
+    }
+
+    &:active {
+      fill: gray;
+    }
   }
 
   .footer__hash {
@@ -126,17 +135,6 @@
     top: 13px;
     left: 17px;
     //margin: 22px 12px 0 0px;
-  }
-
-  .footer__icon {
-    &:hover {
-      transition: all 0.3s;
-      fill: #81b3d2;
-    }
-
-    &:active {
-      fill: gray;
-    }
   }
 
   .footer__wrapper .promo__title--form {

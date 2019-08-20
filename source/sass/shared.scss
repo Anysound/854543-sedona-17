@@ -36,6 +36,8 @@ label[for|="neutral"]::before {
 label[for|="positive"],
 label[for|="negative"],
 label[for|="neutral"] {
+  margin-bottom: 15px;
+
   &:hover::before {
     background-color: #e5e5e5;
     border: 17px solid #e5e5e5;
@@ -72,7 +74,7 @@ label[for|="rocks"] {
 
   &:active::before {
     transition: all 0.3s;
-    background-color: #d5d5d5
+    background-color: #d5d5d5;
   }
 }
 
@@ -91,13 +93,6 @@ input:checked[type="checkbox"] + label::before {
 
 input:checked[type="checkbox"] + label:active::before {
   opacity: 0.5;
-}
-
-
-label[for|="positive"],
-label[for|="negative"],
-label[for|="neutral"] {
-  margin-bottom: 15px;
 }
 
 label[for|="radio"],

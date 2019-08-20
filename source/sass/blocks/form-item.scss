@@ -396,6 +396,21 @@
 @media (min-width: $desktop-width) {
   .form-item--visited {
     display: flex;
+
+    .promo__title {
+      padding: 0 33%;
+      margin: 25px 0 0 0;
+
+      &::before {
+        left: 95px;
+        width: 285px;
+      }
+
+      &::after {
+        right: 97px;
+        width: 285px;
+      }
+    }
   }
 
   .form-item__inner-wrapper {
@@ -415,7 +430,7 @@
 
   .form-item--introduce {
     width: 40%;
-    padding: 0px;
+    padding: 0;
 
     .promo__title {
       margin: 0 0 0 -171px;
@@ -428,17 +443,17 @@
         margin: 40px 0 0 92px;
       }
 
-    &:nth-of-type(2) {
-      width: 80%;
-      margin: 5px 0 0 93px;
-    }
+      &:nth-of-type(2) {
+        width: 80%;
+        margin: 5px 0 0 93px;
+      }
 
-    &:last-of-type {
-      flex-direction: row;
-      width: 80%;
-      margin: 5px 0 0 93px;
+      &:last-of-type {
+        flex-direction: row;
+        width: 80%;
+        margin: 5px 0 0 93px;
+      }
     }
-  }
   }
 
   .form-item__name {
@@ -453,7 +468,6 @@
   .form-item__surname {
     margin-left: 10px;
   }
-  
 
   .form-item--contacts {
     flex-direction: row;
@@ -486,7 +500,7 @@
       }
 
       &:last-of-type {
-        margin: 57px 0 0 58px
+        margin: 57px 0 0 58px;
       }
     }
   }
@@ -497,24 +511,6 @@
     .form-item__email,
     .form-item__tel {
       width: 215px;
-    }
-  }
-
-
-  .form-item--visited {
-    .promo__title {
-      padding: 0 33%;
-      margin: 25px 0px 0 0;
-
-    &::before {
-      left: 95px;
-      width: 285px;
-    }
-
-    &::after {
-      right: 97px;
-      width: 285px;
-    }
     }
   }
 
@@ -530,6 +526,7 @@
     &:nth-of-type(3) {
       margin: 40px 0 0 53px;
     }
+
     &:last-of-type {
       margin: 40px 0 0 33px;
     }
@@ -558,6 +555,7 @@
       }
     }
   }
+
   .form-item__describe {
     width: 960px;
     margin: 60px 0 0 100px;
@@ -567,12 +565,12 @@
   .form-item__send {
     width: 480px;
     margin: 10px 0 0 80px;
-  
+
     &:hover {
       transition: all 0.3s;
       background-color: #669ec0;
     }
-  
+
     &:active {
       background-color: #5496bd;
       color: rgba(255, 255, 255, 0.3);

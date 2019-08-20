@@ -46,7 +46,7 @@
 .player__btn-subs,
 .player__btn-fullscr {
   position: relative;
-  fill:#5c6870;
+  fill: #5c6870;
 
   &:hover {
     fill: #333333;
@@ -71,7 +71,7 @@
 @media (min-width: $tablet-width) {
   .player {
     width: $tablet-width;
-    padding: 62px 0 0px;
+    padding: 62px 0 0;
     margin-bottom: -27px;
     text-align: center;
   }
@@ -91,7 +91,7 @@
     width: 389px;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.3);
-  
+
     &::before {
       content: "";
       position: absolute;
@@ -102,10 +102,6 @@
       background-color: #ffffff;
       border-radius: 50%;
     }
-  }
-
-  .player__buttons {
-    bottom: 66px;
   }
 
   .player__btn-replay,
@@ -119,11 +115,12 @@
     }
 
     &:active {
-      fill: rgba(255, 255, 255, 0.3)
+      fill: rgba(255, 255, 255, 0.3);
     }
   }
 
   .player__buttons {
+    bottom: 66px;
     width: 648px;
     background-color: transparent;
   }
@@ -132,12 +129,12 @@
     top: 5px;
     left: -204px;
   }
-  
+
   .player__btn-subs {
     top: 6px;
     left: 264px;
   }
-  
+
   .player__btn-fullscr {
     top: 5px;
     left: 288px;
@@ -159,12 +156,12 @@
     top: 5px;
     left: -66px;
   }
-  
+
   .player__btn-subs {
     top: 6px;
     left: 554px;
   }
-  
+
   .player__btn-fullscr {
     top: 6px;
     left: 578px;
