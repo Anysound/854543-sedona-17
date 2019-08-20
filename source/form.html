@@ -17,17 +17,17 @@
   </div>
   <header class="header">
     <div class="header__wrapper">
-      <nav class="nav nav--opened nav--nojs">
+      <nav class="nav nav--closed nav--nojs">
         <button class="nav__btn-toggle"></button>
         <ul class="nav__list">
-          <li class="nav__item nav__item--active"><a href="index.html">главная</a></li>
+          <li class="nav__item"><a href="index.html">главная</a></li>
           <li class="nav__item"><a href="photo.html">фото и видео</a></li>
           <li class="nav__item"><a href="form.html">форма отзыва</a></li>
           <li class="nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">html academy</a>
           </li>
         </ul>
       </nav>
-      <a class="logo header__logo" href="#">
+      <a class="logo header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
           <img src="img/logo-sedona-mobile.svg" alt="Седона">
@@ -70,7 +70,7 @@
         <div class="form-item__wrapper">
           <label class="promo__review" for="tel"> <span>контактный</span> телефон*:</label>
           <div class="form-item__contact-wrapper">
-            <input class="form-item__tel" id="tel" type="tel" placeholder="Введите телефон" name="tel">
+            <input class="form-item__tel" id="tel" type="tel" placeholder="Введите телефон" name="tel" required pattern="^[ 0-9]+$">
             <div class="form-item__icon">
               <img src="img/icon-phone.svg" alt="телефон">
             </div>
@@ -79,7 +79,7 @@
         <div class="form-item__wrapper">
           <label class="promo__review" for="email">электронная почта*:</label>
           <div class="form-item__contact-wrapper">
-            <input class="form-item__email" id="email" type="email" placeholder="Введите e-mail" name="email">
+            <input class="form-item__email" id="email" type="email" placeholder="Введите e-mail" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
             <div class="form-item__icon">
               <img src="img/icon-mail.svg" alt="email">
             </div>
@@ -122,6 +122,21 @@
           <p class="form-item__reqiured-fields">* - обязательные поля</p>
         </div>
       </section>
+      <div class="popup">
+        <div class="popup__failure">
+          <h3 class="promo__title">что-то пошло не так!</h3>
+          <p class="promo__review">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <a class="form-item__send" href="#">ОК</a>
+        </div>
+        <div class="popup__success">
+          <h3 class="promo__title">Ваш отзыв отправлен!</h3>
+          <p class="promo__review">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+          В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="popup--gray-bg">
+            <a class="form-item__send" href="#">Закрыть окно</a>
+          </div>
+        </div>
+      </div>
     </form>
   </main>
   <footer class="footer">

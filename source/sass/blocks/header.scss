@@ -258,5 +258,17 @@
     top: -100px;
     height: 295px;
     padding: 0;
+
+    .header__triangle-left {
+      border-width: 50px 0 0 345px;
+
+      &::before {
+        top: -39px;
+      }
+    }
+
+    .header__triangle-right {
+      border-width: 0 0 50px 350px;
+    }
   }
 }
