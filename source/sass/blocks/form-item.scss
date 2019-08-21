@@ -464,7 +464,6 @@
         width: 80%;
         margin: 5px 0 0 93px;
       }
-    }
   }
 
   .form-item__name {
@@ -478,6 +477,24 @@
 
   .form-item__surname {
     margin-left: 10px;
+  }
+
+  .form-item__wrapper {
+    &:first-of-type {
+      flex-direction: row;
+      width: 48%;
+      margin: 0 0 0 5px;
+    }
+
+    &:nth-of-type(2) {
+      width: 45%;
+      margin-left: 5px;
+    }
+
+    &:last-of-type {
+      flex-direction: row;
+      margin-left: 5px;
+    }
   }
 
   .form-item--contacts {
@@ -590,6 +607,5 @@
       .promo__review {
         margin: 18px 0 0 -12px;
       }
-    }
-  }
+   }
 }
