@@ -106,13 +106,17 @@
 
   .promo__review--no-border {
     margin-bottom: 0;
-    padding: 0 25px;
+    padding: 0 15px;
     border-bottom: none;
   }
 
   .promo-item__places {
     margin: 15px 0 0;
   }
+}
+
+.promo-item__text-gray--last-item {
+  padding-bottom: 27px;
 }
 
 .promo-item--small {
@@ -198,6 +202,10 @@
       border-bottom: 0;
     }
 
+    .promo__review--no-border {
+      padding: 0 25px;
+    }
+
     .promo__review--las-vegas {
       padding: 0 40px;
     }
@@ -272,6 +280,10 @@
   .promo-item__text-gray {
     .promo__review {
       padding: 0 35px 30px;
+    }
+
+    .promo__review--las-vegas {
+      padding: 0 41px 30px;
     }
   }
 
