@@ -539,6 +539,7 @@
     }
 
     &:last-of-type {
+      width: 220px;
       margin: 40px 0 0 33px;
     }
   }
@@ -582,5 +583,13 @@
     top: 3px;
     left: -100px;
     text-transform: uppercase;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .form-item__wrapper {
+      .promo__review {
+        margin: 18px 0 0 -12px;
+      }
+    }
   }
 }

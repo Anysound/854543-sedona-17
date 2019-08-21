@@ -222,7 +222,7 @@
 
     &:nth-child(2) {
       position: relative;
-      top: -80px;
+      top: 0px;
       width: 400px;
       padding: 0;
     }
@@ -235,7 +235,6 @@
     &:last-child {
       position: relative;
       padding: 0;
-      height: 400px;
     }
 
     .gallery-items__img {
@@ -296,5 +295,19 @@
   .gallery-items__icon {
     fill: white;
     margin-right: 8px;
+  }
+
+  .gallery-items__link {
+    &:not(:first-child) {
+      position: relative;
+      top: -80px;
+    }
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .gallery-items__item {
+      .gallery-items__wrapper--places {
+        top: 0;
+      }
+    }
   }
 }
