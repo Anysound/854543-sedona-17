@@ -1,5 +1,8 @@
 body {
+  width: 320px;
   max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 9px 1px #e6e6e6;
   font-family: "pt-sans", "Arial", sans-serif;
 }
 
@@ -112,5 +115,15 @@ label[for|="checkbox"] {
 
   label[for|="neutral"] {
     margin: 25px 0 0 32px;
+  }
+
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
   }
 }

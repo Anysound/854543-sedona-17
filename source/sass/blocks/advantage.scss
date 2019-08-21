@@ -25,20 +25,20 @@
   }
 }
 
-.advantage__img--house {
+.advantage__img-house {
   width: 39px;
   align-self: flex-start;
   margin-top: 4px;
   margin-right: 13px;
 }
 
-.advantage__img--gift {
+.advantage__img-gift {
   width: 32px;
   margin: 2px 16px 0 4px;
   align-self: flex-start;
 }
 
-.advantage__img--eat {
+.advantage__img-eat {
   width: 40px;
   align-self: flex-start;
   margin-top: 7px;
@@ -80,24 +80,24 @@
     }
   }
 
-  .advantage__img--house,
-  .advantage__img--gift,
-  .advantage__img--eat {
+  .advantage__img-house,
+  .advantage__img-gift,
+  .advantage__img-eat {
     margin: 0 auto;
   }
 
-  .advantage__img--house {
+  .advantage__img-house {
     width: 75px;
   }
 
-  .advantage__img--gift {
+  .advantage__img-gift {
     width: 64px;
     height: 75px;
     margin-top: 0;
     padding-bottom: 0;
   }
 
-  .advantage__img--eat {
+  .advantage__img-eat {
     width: 77px;
     margin-bottom: 2px;
     padding-top: 5px;
@@ -154,17 +154,17 @@
     width: 400px;
   }
 
-  .advantage__img--gift {
+  .advantage__img-gift {
     margin-left: 170px;
     margin-top: -10px;
     padding: 5px 0 0 0;
   }
 
-  .advantage__img--house {
+  .advantage__img-house {
     margin-left: 167px;
   }
 
-  .advantage__img--eat {
+  .advantage__img-eat {
     margin-left: 180px;
   }
 

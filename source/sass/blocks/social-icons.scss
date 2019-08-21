@@ -36,12 +36,13 @@
 
 @media (min-width: $tablet-width) {
   .social-icons {
-    margin-left: 105px;
+    margin-left: 65px;
+    top: -3px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .social-icons {
-    margin-left: 263px;
+    margin-left: 223px;
   }
 }
