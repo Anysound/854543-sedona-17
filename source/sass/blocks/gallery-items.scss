@@ -222,7 +222,7 @@
 
     &:nth-child(2) {
       position: relative;
-      top: 0px;
+      top: 0;
       width: 400px;
       padding: 0;
     }
@@ -303,6 +303,7 @@
       top: -80px;
     }
   }
+
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .gallery-items__item {
       .gallery-items__wrapper--places {
