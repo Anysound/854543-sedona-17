@@ -1,7 +1,7 @@
 .player {
   position: relative;
   width: 320px;
-  padding: 20px 0 10px;
+  padding: 35px 0 10px;
 }
 
 .player__progress {
@@ -71,7 +71,7 @@
 @media (min-width: $tablet-width) {
   .player {
     width: $tablet-width;
-    padding: 62px 0 0;
+    padding: 75px 0 0;
     margin-bottom: -27px;
     text-align: center;
   }
@@ -144,7 +144,8 @@
 @media (min-width: $desktop-width) {
   .player {
     width: $desktop-width;
-    margin: -40px 0 0 -20px;
+    margin: -5px 0 0 -20px;
+    padding: 80px 0 0;
   }
 
   .player__progress {

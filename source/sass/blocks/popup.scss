@@ -8,18 +8,48 @@
   padding: 1px 45px 35px;
   text-align: center;
 
-  .promo__title {
+  .popup__title {
     padding: 0;
+    margin-top: 40px;
+    font-family: "pt-sansBold", "Arial Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
   }
 
-  .form-item__send {
+  .popup__btn {
     width: 180px;
+    display: inline-block;
+    margin: 30px;
+    border: none;
+    background-color: #81b3d2;
+    color: white;
+    letter-spacing: 2px;
     padding: 20px 0;
     font-weight: 600;
+
+    &:hover {
+      transition: all 0.3s;
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
-  .promo__review {
+  .popup__review {
     margin-bottom: 0;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
   }
 }
 
@@ -28,13 +58,41 @@
   box-sizing: border-box;
   padding: 5px 0;
 
-  .promo__review {
+  .popup__review {
     padding: 0 50px;
     margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .popup__btn {
+    display: inline-block;
+    width: 100%;
+    margin: 30px;
+    border: none;
+    background-color: #81b3d2;
+    color: white;
+    letter-spacing: 2px;
+  }
+
+  .popup__title {
+    padding: 0;
+    margin-top: 40px;
+    font-family: "pt-sansBold", "Arial Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
   }
 }
 
-.popup--gray-bg {
+.popup__gray-bg {
   position: relative;
   display: flex;
   justify-content: center;
@@ -43,14 +101,23 @@
   height: 98px;
   background-color: #f2f2f2;
 
-  .form-item__send {
+  .popup__btn {
     width: 280px;
     margin: 0;
-
     padding: 20px 0;
     text-align: center;
     font-weight: 600;
     text-transform: uppercase;
+
+    &:hover {
+      transition: all 0.3s;
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
@@ -59,13 +126,13 @@
     width: 400px;
     margin: 0 auto;
 
-    .promo__title {
+    .popup__title {
       font-size: 30px;
       line-height: 1.3;
       padding: 0 40px;
     }
 
-    .form-item__send {
+    .popup__btn {
       width: 272px;
       margin: 30px 0;
     }
@@ -75,16 +142,20 @@
     width: 640px;
     margin: 0 auto;
 
-    .promo__title {
+    .popup__title {
       font-size: 30px;
     }
 
-    .promo__review {
+    .popup__review {
       padding: 0 110px;
+    }
+
+    .popup__btn {
+      width: 458px;
     }
   }
 
-  .popup--gray-bg {
+  .popup__gray-bg {
     width: 100%;
     padding: 30px 0;
   }

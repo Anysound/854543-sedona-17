@@ -70,16 +70,16 @@
   }
 }
 
-.gallery-items__item--places,
-.gallery-items__item--veget,
-.gallery-items__item--roads,
-.gallery-items__item--bridge {
+.gallery-items__places,
+.gallery-items__veget,
+.gallery-items__roads,
+.gallery-items__bridge {
   position: relative;
   top: -1px;
   left: 4px;
   display: inline-block;
   font-size: 13px;
-  font-family: "pt-sansBold", sans-serif;
+  font-family: "pt-sansBold", "Arial Bold", sans-serif;
 }
 
 .gallery-items__text--veget {
@@ -92,6 +92,18 @@
   .promo__title--small {
     margin: 14px 0 2px;
   }
+}
+
+.gallery-items__title {
+  margin: 15px 0 2px;
+  padding: 0;
+  font-family: "pt-sansBold", "Arial Bold", sans-serif;
+  font-weight: 700;
+  color: #000000;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: left;
 }
 
 @media (min-width: $tablet-width) {
@@ -165,19 +177,19 @@
       display: flex;
       align-items: center;
 
-      .gallery-items__item--places {
+      .gallery-items__places {
         margin: 12px 25px 0 0;
       }
 
-      .gallery-items__item--veget {
+      .gallery-items__veget {
         margin: 10px 34px 0 0;
       }
 
-      .gallery-items__item--roads {
+      .gallery-items__roads {
         margin: 11px 39px 0 0;
       }
 
-      .gallery-items__item--bridge {
+      .gallery-items__bridge {
         margin: 14px 36px 0 0;
       }
 
@@ -190,7 +202,7 @@
   .gallery-items__text {
     margin-left: 20px;
 
-    .promo__title {
+    .gallery-items__title {
       margin: 15px 0 3px;
       font-size: 14px;
     }
@@ -289,7 +301,7 @@
       width: 1200px;
     }
 
-    .promo__title {
+    .gallery-items__title {
       color: #ffffff;
     }
 

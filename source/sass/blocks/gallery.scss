@@ -7,6 +7,10 @@
   margin-top: 27px;
   padding: 0 20px;
   line-height: 1.72;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
 
   span {
     white-space: nowrap;
@@ -20,6 +24,14 @@
 
 .gallery__title {
   margin-top: 8px;
+  padding: 0 40px;
+  font-family: "pt-sansBold", "Arial Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,18 +43,15 @@
     padding-bottom: 20px;
     border-bottom: none;
 
-    .promo__title {
+    .gallery__title {
       margin-top: -12px;
       font-size: 30px;
     }
 
-    .promo__review {
+    .gallery__review {
       margin-top: 0;
+      padding: 10px 170px;
     }
-  }
-
-  .gallery__review {
-    padding: 10px 170px;
   }
 }
 
@@ -54,17 +63,13 @@
   .gallery__text {
     padding-bottom: 10px;
 
-    .promo__title {
-      margin: 20px 0 10px;
+    .gallery__title {
+      margin: 17px 0 10px;
     }
 
-    .promo__review {
-      margin-top: 20px;
+    .gallery__review {
+      margin: 20px 0 50px;
+      padding: 10px 380px;
     }
-  }
-
-  .gallery__review {
-    margin-bottom: 50px;
-    padding: 10px 380px;
   }
 }

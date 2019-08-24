@@ -8,20 +8,43 @@
   justify-content: space-between;
 }
 
+.feedback__title {
+  font-family: "pt-sansBold", "Arial Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.feedback__review {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+}
+
 .feedback__heading {
-  .promo__review {
+  .feedback__review {
     margin: 27px 0 20px;
     line-height: 1.7;
   }
 
-  .promo__title {
+  .feedback__title {
     margin-top: 10px;
+    padding: 0 40px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
     width: $tablet-width;
+  }
+
+  .feedback__title {
+    font-size: 21px;
   }
 
   .feedback__form {
@@ -31,15 +54,15 @@
   }
 
   .feedback__heading {
-    .promo__title {
+    .feedback__title {
+      margin-top: -10px;
       font-size: 30px;
       font-weight: 700;
-      margin-top: -10px;
     }
 
-    .promo__review {
-      padding: 0 21%;
+    .feedback__review {
       margin-top: 31px;
+      padding: 0 21%;
     }
   }
 }
@@ -50,11 +73,11 @@
   }
 
   .feedback__heading {
-    .promo__title {
+    .feedback__title {
       margin-top: 17px;
     }
 
-    .promo__review {
+    .feedback__review {
       padding: 0 377px;
     }
   }

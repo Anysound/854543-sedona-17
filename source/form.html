@@ -42,33 +42,33 @@
   </header>
   <main class="feedback">
     <article class="feedback__heading">
-      <h1 class="promo__title">Оставьте свой отзыв</h1>
-      <p class="promo__review">
+      <h1 class="feedback__title">Оставьте свой отзыв</h1>
+      <p class="feedback__review">
         Помогите нашим отелям стать лучше! оставьте отзыв о них,
         а также о посещенных вами достопримечательностях
       </p>
     </article>
     <form class="feedback__form">
       <section class="form-item form-item--introduce">
-        <h2 class="promo__title">Представьтесь</h2>
+        <h2 class="feedback__title">Представьтесь</h2>
         <div class="form-item__wrapper">
-          <label class="promo__review" for="name">имя*:</label>
+          <label class="feedback__review" for="name">имя*:</label>
           <input class="form-item__name" id="name" type="text" placeholder="Петр" name="name">
         </div>
         <div class="form-item__wrapper">
-          <label class="promo__review" for="surname">фамилия*:</label>
+          <label class="feedback__review" for="surname">фамилия*:</label>
           <input class="form-item__surname" id="surname" type="text" placeholder="Иванов" name="surname">
         </div>
         <div class="form-item__wrapper">
-          <label class="promo__review" for="patronymic">отчество:</label>
+          <label class="feedback__review" for="patronymic">отчество:</label>
           <input class="form-item__patronymic" id="patronymic" type="text" placeholder="Александрович"
             name="patronymic">
         </div>
       </section>
       <section class="form-item form-item--contacts">
-        <h2 class="promo__title">Контактная информация:</h2>
+        <h2 class="feedback__title">Контактная информация:</h2>
         <div class="form-item__wrapper">
-          <label class="promo__review" for="tel"> <span>контактный</span> телефон*:</label>
+          <label class="feedback__review" for="tel"> <span>контактный</span> телефон*:</label>
           <div class="form-item__contact-wrapper">
             <input class="form-item__tel" id="tel" type="tel" placeholder="Введите телефон" name="tel" required pattern="^[ 0-9]+$">
             <div class="form-item__icon">
@@ -77,7 +77,7 @@
           </div>
         </div>
         <div class="form-item__wrapper">
-          <label class="promo__review" for="email">электронная почта*:</label>
+          <label class="feedback__review" for="email">электронная почта*:</label>
           <div class="form-item__contact-wrapper">
             <input class="form-item__email" id="email" type="email" placeholder="Введите e-mail" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
             <div class="form-item__icon">
@@ -87,13 +87,13 @@
         </div>
       </section>
       <section class="form-item form-item--general">
-        <h2 class="promo__title">Ваше общее впечатление</h2>
+        <h2 class="feedback__title">Ваше общее впечатление</h2>
         <input id="positive" type="radio" name="name"><label for="positive">Скорее положительное</label>
         <input id="negative" type="radio" name="name"><label for="negative">Скорее отрицательное</label>
         <input id="neutral" type="radio" name="name"><label for="neutral">Затрудняюсь ответить</label>
       </section>
       <section class="form-item form-item--visited">
-        <h2 class="promo__title">посещенные достопримечательности</h2>
+        <h2 class="feedback__title">посещенные достопримечательности</h2>
         <div class="form-item__inner-wrapper">
           <div class="form-item__visit-wrapper">
             <input id="bridge" type="checkbox" name="bridge">
@@ -114,26 +114,26 @@
         </div>
       </section>
       <section class="form-item form-item--description">
-        <h2 class="promo__title">опишите свои эмоции</h2>
+        <h2 class="feedback__title">опишите свои эмоции</h2>
         <textarea class="form-item__describe" placeholder="Опишите подробно все свои восторги"></textarea>
         <div class="feedback__wrapper">
-          <input class="form-item__send promo__title promo__title--button" type="submit" value="отправить отзыв"
+          <input class="form-item__send feedback__title feedback__title--button" type="submit" value="отправить отзыв"
             name="send">
           <p class="form-item__reqiured-fields">* - обязательные поля</p>
         </div>
       </section>
       <div class="popup">
         <div class="popup__failure">
-          <h3 class="promo__title">что-то пошло не так!</h3>
-          <p class="promo__review">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <a class="form-item__send" href="#">ОК</a>
+          <h3 class="popup__title">что-то пошло не так!</h3>
+          <p class="popup__review">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <a class="popup__btn" href="#">ОК</a>
         </div>
         <div class="popup__success">
-          <h3 class="promo__title">Ваш отзыв отправлен!</h3>
-          <p class="promo__review">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+          <h3 class="popup__title">Ваш отзыв отправлен!</h3>
+          <p class="popup__review">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
           В ближайшее время мы опубликуем его на сайте.</p>
-          <div class="popup--gray-bg">
-            <a class="form-item__send" href="#">Закрыть окно</a>
+          <div class="popup__gray-bg">
+            <a class="popup__btn" href="#">Закрыть окно</a>
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <a class="footer__hash promo__title promo__title--form" href="#">#visitsedona</a>
+      <a class="footer__hash footer__hash--form" href="#">#visitsedona</a>
       <div class="social-icons footer__icons">
         <a class="social-icons__link" href="#">
           <svg width="19" height="15">
@@ -170,6 +170,10 @@
     </div>
   </footer>
   <script src="js/common.js"></script>
+  <script type="text/javascript">
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+      document.write('<script src="js/picturefill.js"><\/script>');
+  </script>
 </body>
 
 </html>

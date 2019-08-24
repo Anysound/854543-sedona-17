@@ -157,6 +157,10 @@
     </div>
   </footer>
   <script src="js/common.js"></script>
+  <script type="text/javascript">
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+      document.write('<script src="js/picturefill.js"><\/script>');
+  </script>
 </body>
 
 </html>

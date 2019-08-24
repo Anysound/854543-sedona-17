@@ -8,7 +8,7 @@
     align-items: baseline;
   }
 
-  .promo__title {
+  .feedback__title {
     padding: 0;
     margin: 19px 0 11px;
   }
@@ -59,12 +59,18 @@
 .form-item--introduce {
   padding-bottom: 15px;
 
-  .promo__title {
+  .feedback__title {
     margin-top: 18px;
+    padding: 0 40px;
+    line-height: 26px;
   }
 
   .form-item__wrapper {
     margin-bottom: 10px;
+
+    .feedback__review {
+      margin-top: 30px;
+    }
   }
 }
 
@@ -75,12 +81,12 @@
     flex-direction: column;
   }
 
-  .promo__title {
+  .feedback__title {
     padding: 0;
     margin-top: 17px;
   }
 
-  .promo__review {
+  .feedback__review {
     margin: 14px 0 9px;
     padding: 0 0 0 20px;
   }
@@ -89,7 +95,7 @@
 .form-item--general {
   padding-bottom: 15px;
 
-  .promo__title {
+  .feedback__title {
     margin: 16px 0 25px;
     padding: 0;
   }
@@ -131,16 +137,19 @@
 }
 
 .form-item--description {
-  .promo__title {
+  .feedback__title {
     margin-bottom: 14px;
+    padding: 0;
+    color: #000000;
   }
 
   .feedback__wrapper {
-    padding-top: 33px;
+    padding: 33px 0 30px;
   }
 
-  .promo__title--button {
+  .feedback__title--button {
     padding: 16px 10px;
+    color: #ffffff;
   }
 }
 
@@ -163,7 +172,8 @@
   resize: none;
   outline: none;
   border: 4px solid #f2f2f2;
-  padding: 21px 22px;
+  padding: 14px 22px;
+  line-height: 1.7;
 
   &:focus {
     background: white;
@@ -211,7 +221,13 @@
     width: 334px;
     padding-left: 0;
 
-    .promo__title {
+    .form-item__wrapper {
+      .feedback__review {
+        margin-top: 36px;
+      }
+    }
+
+    .feedback__title {
       margin-top: 15px;
       margin-left: -60px;
     }
@@ -262,13 +278,13 @@
       margin: 4px 0 0 72px;
     }
 
-    .promo__review {
+    .feedback__review {
       margin: 36px 0 0 -12px;
     }
   }
 
   .form-item--contacts {
-    .promo__title {
+    .feedback__title {
       position: relative;
       margin-top: 55px;
 
@@ -297,7 +313,7 @@
       margin: -12px 0 0 40px;
     }
 
-    .promo__review {
+    .feedback__review {
       margin-left: 3px;
       line-height: 1px;
 
@@ -314,7 +330,7 @@
   }
 
   .form-item--visited {
-    .promo__title {
+    .feedback__title {
       position: relative;
       padding: 0 30%;
       margin-top: 27px;
@@ -352,7 +368,7 @@
   }
 
   .form-item--description {
-    .promo__title {
+    .feedback__title {
       position: relative;
       margin: 45px 0 58px;
 
@@ -376,12 +392,20 @@
         background-color: rgba(0, 0, 0, 0.1);
       }
     }
+
+    .feedback__title--button {
+      margin: 24px 0 0 39px;
+    }
+
+    .feedback__wrapper {
+      padding: 33px 0 65px;
+    }
   }
 
   .form-item__describe {
     margin-left: 40px;
     width: 89%;
-    padding: 14px;
+    padding: 11px 17px;
   }
 
   .form-item__send {
@@ -389,7 +413,7 @@
   }
 
   .feedback__wrapper {
-    .promo__title {
+    .feddback__title {
       margin-top: 24px;
       margin-left: 40px;
     }
@@ -408,7 +432,7 @@
   .form-item--visited {
     display: flex;
 
-    .promo__title {
+    .feedback__title {
       padding: 0 33%;
       margin: 25px 0 0 0;
 
@@ -434,7 +458,7 @@
     padding-left: 95px;
     margin-top: -15px;
 
-    .promo__title {
+    .feedback__title {
       margin-left: -9px;
     }
   }
@@ -443,7 +467,7 @@
     width: 40%;
     padding: 0;
 
-    .promo__title {
+    .feedback__title {
       margin: 0 0 0 -171px;
     }
 
@@ -484,7 +508,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    .promo__title {
+    .feedback__title {
       width: 100%;
 
       &::before {
@@ -502,7 +526,7 @@
       flex-direction: row;
       margin: 57px 0 0 75px;
 
-      .promo__review {
+      .feedback__review {
         margin-right: 17px;
 
         span {
@@ -545,7 +569,7 @@
   }
 
   .form-item--description {
-    .promo__title {
+    .feedback__title {
       margin: 60px 0 0;
 
       &::before {
@@ -560,10 +584,11 @@
     }
 
     .feedback__wrapper {
-      padding: 60px 0 60px 100px;
+      padding: 60px 0 70px 100px;
 
-      .promo__title--button {
-        margin: 0;
+      .feedback__title--button {
+        margin-top: -5px;
+        letter-spacing: normal;
       }
     }
   }
@@ -571,7 +596,7 @@
   .form-item__describe {
     width: 960px;
     margin: 60px 0 0 100px;
-    padding: 15px 20px;
+    padding: 10px 17px;
   }
 
   .form-item__send {
@@ -586,9 +611,11 @@
   }
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .form-item__wrapper {
-      .promo__review {
-        margin: 18px 0 0 -12px;
+    .form-item--introduce {
+      .form-item__wrapper {
+        .feedback__review {
+          margin: 18px 0 0 -12px;
+        }
       }
     }
   }

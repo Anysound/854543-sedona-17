@@ -11,11 +11,9 @@
 
 .footer__hash {
   display: block;
-  margin-bottom: 35px;
-  margin-top: 30px;
-  text-align: center;
-  font-size: 22px;
+  margin: 30px 0 35px;
   padding: 0 40px;
+  font-size: 22px;
   font-family: "pt-sansBold", "Arial Bold", sans-serif;
   color: #000000;
   line-height: 26px;
@@ -118,8 +116,8 @@
     padding: 0 120px;
   }
 
-  .promo__title--form {
-    margin-bottom: 40px;
+  .footer__hash--form {
+    margin-bottom: 5px;
   }
 
   .footer__link {
